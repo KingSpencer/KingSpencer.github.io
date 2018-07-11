@@ -9,7 +9,7 @@
 	width: auto;
 	height: auto;
 	display: none;
-	z-index: 999;
+	z-index: 1;
 }
 
 .item {
