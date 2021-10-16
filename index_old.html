@@ -1,0 +1,416 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Zifeng's Personal Website</title>
+		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery.scrollzer.min.js"></script>
+		<script src="js/jquery.scrolly.min.js"></script>
+		<script src="js/skel.min.js"></script>
+		<script src="js/skel-layers.min.js"></script>
+		<script src="js/init.js"></script>
+		<script src="js/carousel.js"></script>
+		<noscript>
+			<link rel="stylesheet" href="css/carousel.css" />
+			<link rel="stylesheet" href="css/skel.css" />
+			<link rel="stylesheet" href="css/style.css" />
+			<!-- <link rel="stylesheet" href="css/carousel.css"> -->
+			<link rel="stylesheet" href="css/style-xlarge.css" />
+		</noscript>
+		<style type="text/css">
+			.carousel {
+				-webkit-transform: translate3d(0,0,0);
+				background: rgba(0,0,0,0.85);
+				position: fixed;
+				right: 0;
+				bottom: 0;
+				min-width: 100%;
+				min-height: 100%;
+				width: auto;
+				height: auto;
+				display: none;
+				z-index: 1;
+			}
+
+			.img-center-carousel {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				padding: 0;
+				margin: auto;
+				width: 60%;
+				height: auto;
+			}
+
+			.carousel-close {
+				position: absolute;
+				top: 25px;
+				right: 100px;
+				padding: 0;
+				margin: auto;
+				width: 50px;
+				height: auto;
+			}
+			.research {
+				margin-bottom: 30px;
+			}
+			.research h4{
+				float: left;
+			}
+			.research div{
+				text-align: end;
+				font-size:0.9em;
+			}
+			.thumbnail {
+				width: 30%;
+				max-height: 200px;
+				float: left;
+			}
+			.thumbnail-right {
+				margin-left: 35%;
+			}
+			#exp li {
+				margin-bottom: 50px;
+			}
+			.school-logo {
+				width: 10%;
+				float: left;
+			}
+			.school-text {
+				margin-left: 20%;
+				width:60%;
+			}
+			a {
+				color: black;
+			}
+		</style>
+		<!--[if lte IE 8]><link rel="stylesheet" href="css/ie/v8.css" /><![endif]-->
+	</head>
+	<body>
+		<div id="wrapper">
+
+			<!-- Header -->
+				<section id="header" class="skel-layers-fixed">
+					<header>
+						<span class="image avatar"><img src="images/zifeng_avatar.png" alt="" /></span>
+						<h1 id="logo"><a href="#">Zifeng Wang</a></h1>
+						<p><a href="mailto:zifengwang@ece.neu.edu">mail: zifengwang@ece.neu.edu</a></p>
+						<p><a href = "Resume.pdf">curriculum vitae</a></a></p>
+					</header>
+					<nav id="nav">
+						<ul>
+							<li><a href="#one" class="active">About Me</a></li>
+							<li><a href="#one-plus">Research</a> <li></li>
+							<li><a href="#two">Education</a> <li>
+							<li><a href="#three">Research Experiences</a></li>
+							<li><a href="#four">Selected Publications</a></li>
+							<li><a href="#five">Awards</a></li>
+							<li><a href="#six">Skills</a></li>
+
+						</ul>
+					</nav>
+					<footer>
+						<ul class="icons">
+							<!--<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>-->
+							<li><a href="https://www.linkedin.com/in/zifeng-wang-21b069b4/" class="icon fa-linkedin"><span class="label">Github</span></a></li> 
+							<li><a href="mailto:zifengwang@ece.neu.edu" class="icon fa-envelope"><span class="label">Email zifengwangking@163.com</span></a></li>
+						</ul>
+					</footer>
+				</section>
+
+			<!-- Main -->
+				<div id="main">
+
+					<!-- One -->
+						<section id="one">
+							<div class="container">
+								<header class="major">
+									<h3>About Me</h3>
+								</header>
+								<p> I am Zifeng Wang, a fourth-year PhD student in Machine Learning at <a href="https://web.northeastern.edu/spiral/">SPIRAL</a> group from <a href="https://www.northeastern.edu/">Northeastern University</a>, advised by Prof. <a href="http://www.ece.neu.edu/fac-ece/jdy/">Jennifer G. Dy</a>. 
+									I also work as student researcher at <a href="https://research.google/teams/cloud-ai/">Google Cloud AI Research</a>, under the supervision of <a href="https://sites.google.com/view/zizhaozhang/home">Zizhao Zhang</a>, <a href="https://chl260.github.io/">Chen-Yu Lee</a>, and <a href="https://tomas.pfister.fi/">Tomas Pfister</a>.
+								</p>
+								<p> I received my BS degree in Electronic Engineering from <a href="http://www.tsinghua.edu.cn/publish/thu2018en/index.html">Tsinghua University</a>, Beijing. 
+									During my college years, I also worked with Prof. <a href="https://sites.google.com/site/elujiwen/">Jiwen Lu</a> (Tsinghua), Prof. <a href = "https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a> (Princeton) on computer vision and Prof. <a href="http://fi.ee.tsinghua.edu.cn/~liyong/">Yong Li</a> on big data.
+								</p>>
+									
+									My study and research interests mainly focus on machine learning, computer vision and various application of artificial intelligence.</p>
+							</div>
+						</section>
+						
+						<section id="one-plus">
+							<div class="container">
+								<h3>Research</h3>
+								<ul>
+									<li> Continual (lifelong) Learning </li>
+									<li> Adversarial robustness and model compression </li>
+									<li> Deep learning applications in vision, health, wireless communications, etc. </li>
+								</ul>
+							</div>
+						</section>
+
+					<!-- One -->
+						<section id="two">
+							<div class="container">
+								<h3>Education Background</h3>
+								<ul id="exp" style="list-style:none;">
+									<li> <img class="school-logo" src="schools/NEU.jpeg"><div class="school-text">Sep 2018 - Present, Northeastern University, <br />PhD Student in Machine Learning, Dean's Fellow </div></li>
+									<li> <img class="school-logo" src="schools/Tsinghua.jpeg"><div class="school-text">Aug 2014 - July 2018, Tsinghua University, <br />B.S. degree in Electronic Engineering, GPA 92/100 (Top 5%) </div></li>
+									<li> <img class="school-logo" src="schools/UMich.jpeg"><div class="school-text">July 2017 - Sep 2017, University of Michigan, <br />Visiting researcher at Department of Computer Science and Engineering</div></li>
+									<li> <img class="school-logo" src="schools/NEU.jpeg"><div class="school-text">Sep 2016 - Dec 2016, Northeastern University, <br />Exchange student at Department of Computer and Electrical Engineering</div></li>
+								</ul>
+							</div>
+						</section>
+
+					<!-- Two -->
+						
+                        					
+					<!-- Three -->
+						<section id="three">
+							<div class="container">
+								<h3>Selected Projects</h3>
+								<p>I have joined several research teams, from big data mining, computer vision to machine learning. These precious experiences taught me a lot.</p>
+								<div class="features">
+									<article>
+										<div>
+											<div class="research">
+												<h4>Learn-Prune-Share for Lifelong Learning</h4>
+												<div>Northeastern University, Advisor: Jennifer Dy</div>
+											</div>
+											<img class="thumbnail" src="images/LPS.png" data-id="LPS-carousel"></img>
+											<div id="LPS-carousel" class="carousel">
+												<img class="img-center-carousel" src="images/LPS.png" alt="">
+												
+												<a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="LPS-carousel" class="carousel-close"></a>
+										  	</div>
+											<ul class="thumbnail-right">
+												<li> Incoporated the state-of-the-art Alternating Direction Method of Multipliers (ADMM) based pruning strategy to solve the lifelong learning problem.</li>
+												<li> Designed a novel knowledge sharing scheme,  which learns to select useful knowledge from old tasks and adapt them to the current task. </li>
+												<li> Paper accepted at ICDM 2020, <a href="Learn_Prune_Share_for_Lifelong_Learning.pdf">Learn-Prune-Share for Lifelong Learning</a></li>.
+											</ul>
+										</div>
+									</article>
+
+									<article>
+										<div>
+											<div class="research">
+												<h4>Class Discovery Kernel Network</h4>
+												<div>Northeastern University, Advisor: Jennifer Dy</div>
+											</div>
+											<img class="thumbnail" src="images/KNET.png" data-id="KNET-carousel"></img>
+											<div id="KNET-carousel" class="carousel">
+												<img class="img-center-carousel" src="images/KNET.png" alt="">
+												
+												<a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="KNET-carousel" class="carousel-close"></a>
+										  	</div>
+											<ul class="thumbnail-right">
+												<li> Proposed  a  deep  learning  framework  which  utilizes HSIC to bridge supervised and unsupervised information together in a systematic way.</li>
+												<li> Addresses the problem of overfitting to old classes, leading  to  improved  class  discovery,  and can be generically applied  to  a  broad  array of deep architectures. </li>
+												<li> <text style="color:red">Best Paper Candidate</text> at ICDM 2020, <a href="Open_World_Class_Discovery_with_Kernel_Networks.pdf">Open-World Class Discovery with Kernel Networks</a></li>.
+											</ul>
+										</div>
+									</article>
+
+									<article>
+										<div>
+											<div class="research">
+												<h4>Unseen Radio Detection</h4>
+												<div>Northeastern University, Advisor: Jennifer Dy</div>
+											</div>
+											<img class="thumbnail" src="images/DYSPAN.png" data-id="DYSPAN-carousel"></img>
+											<div id="DYSPAN-carousel" class="carousel">
+												<img class="img-center-carousel" src="images/DYSPAN.png" alt="">
+												
+												<a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="DYSPAN-carousel" class="carousel-close"></a>
+										  	</div>
+											<ul class="thumbnail-right">
+												<li> Proposed a novel approach to  train  a  neural  network  that  facilitates  new  class  detection.</li>
+												<li> Perform  extensive  analysis  of  the  proposed  modelboth  in  terms  of  model  parameters  and  real-world  datasets. </li>
+												<li> <text style="color:red">Best Paper Award</text> at DySPAN 2019, <a href="https://genesys-lab.org/papers/1570567491-3.pdf">Finding a ‘New’ Needle in the Haystack:
+													Unseen Radio Detection in Large Populations
+													Using Deep Learning</a></li>.
+											</ul>
+										</div>
+									</article>
+
+
+									<article>
+										<div >
+											<div class="research">
+												<h4>Multi-object Tracking</h4>
+												<div>Tsinghua University, Advisor: Jiwen Lu</div>
+											</div>
+											<img class="thumbnail" src="images/MOT.png" data-id="MOT-carousel"></img>
+											<div id="MOT-carousel" class="carousel">
+												<img class="img-center-carousel" src="images/MOT.png" alt="">
+												
+												<a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="MOT-carousel" class="carousel-close"></a>
+										  	</div>
+											<ul class="thumbnail-right">
+												<li> Tracked people in video clips using a deep reinforcement learning approach and created decision-making network for tracking trained by policy gradient</li>
+												<li> Combined deep neural network with motion prediction </li>
+												<li> Paper accepted at ECCV 2018, <a href = "Liangliang_Ren_Collaborative_Deep_Reinforcement_ECCV_2018_paper.pdf">Collaborative Deep Reinforcement Learning for Multi-Object Tracking</a></li>
+											</ul>
+										</div>
+									</article>
+									<!-- <article>
+										<div>
+											<div class="research">
+												<h4>Instance Level Segmentation</h4>
+												<div>University of Michigan, Advisor: Jia Deng</div>
+											</div>
+											<img class="thumbnail" src="images/SEG.png" data-id="SEG-carousel"></img>
+											<div id="SEG-carousel" class="carousel">
+												<img class="img-center-carousel" src="images/SEG.png" alt="">
+												
+												<a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="SEG-carousel" class="carousel-close"></a>
+										  	</div>
+											<ul class="thumbnail-right">
+												<li> Used end-to-end Hourglass model to instance segmentation problem</li>
+												<li> Innovated balanced training approach and modified network to detect small objects </li>
+												<li> Achieved comparable results with FAIRCNN on MSCOCO dataset, with good performance (surpassed
+													mainstram methods when IoU = 0.7) on PASCAL-VOC dataset </li>
+											</ul>
+										</div>
+									</article> -->
+									<!-- <article>
+										<div>
+											<div class="research">
+												<h4>Palm Print Recognition System</h4>
+												<div>Tsinghua University, Advisor: Shengjin Wang</div>
+											</div>
+											<img class="thumbnail" src="images/PALM.png" data-id="PALM-carousel"></img>
+											<div id="PALM-carousel" class="carousel">
+												<img class="img-center-carousel" src="images/PALM.png" alt="">
+												
+												<a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="PALM-carousel" class="carousel-close"></a>
+										  	</div>
+											<ul class="thumbnail-right">
+												<li> Identified an individual by reading palm prints by designing pipeline(image pre-processing ,palm print extraction, position adjustment, feature extraction, similarity calculation) for the system</li>
+												<li> Used modified AlexNet to execute feature extraction </li>
+												<li> Enhancing robustness for security application</li>
+											</ul>
+										</div>
+									</article> -->
+									<!-- <article>
+										<div>
+											<div class="research">
+												<h4>Big Data Mining for Social Networks</h4>
+												<div>Tsinghua University, Advisor: Yong Li</div>
+											</div>
+											<img class="thumbnail" src="images/BIGDATA.png" data-id="BIGDATA-carousel"></img>
+											<div id="BIGDATA-carousel" class="carousel">
+											<img class="img-center-carousel" src="images/BIGDATA.png" alt="">	
+											<a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="BIGDATA-carousel" class="carousel-close"></a>
+										  	</div>
+											<ul class="thumbnail-right">
+												<li> Researched big data mining and user behavior of online shopping customers</li>
+												<li> Used Hadoop to analyze data and co-cluster to analyze correlation between customers and target items </li>
+												<li> Coauthored <a href="MTAP-Online-Shopping-Behavior-April-24-2017.pdf" style="font-style:italic;color:black;text-decoration:underline">Profiling Users by Online Shopping Behaviors</a>, published on <text style="font-style:italic">Multimedia Tools and Applications </text>(if you are looking for a link to the published version, please refer here: <a href="https://doi.org/10.1007/s11042-017-5365-7">published version</a> )</li> 
+											</ul>
+										</div>
+									</article> -->
+								</div>
+							</div>
+						</section>
+						
+					<!-- Four -->
+						
+					
+					<section id="four">
+						<div class="container">
+							<h3>Selected Publications</h3>
+							<h4>Conference Papers</h4>
+							<font size="-0.5">
+								<ul>
+									<li><a href="Learn_Prune_Share_for_Lifelong_Learning.pdf">Learn-Prune-Share for Lifelong Learning</a><br /> 
+										Zifeng Wang, Tong Jian, Kaushik Chowdhury, Yanzhi Wang, Jennifer Dy, and Stratis Ioannidis. <br />
+										<a href="http://icdm2020.bigke.org/">IEEE International Conference on Data Mining (ICDM 2020)</a>, Sorrento, Italy, 2020. </li>
+									<li><a href="Open_World_Class_Discovery_with_Kernel_Networks.pdf">Open-World Class Discovery with Kernel Networks</a><br /> 
+										Zifeng Wang, Batool Salehi, Andrey Gritsenko, Kaushik Chowdhury, Stratis Ioannidis, and Jennifer Dy. <br />
+										<a href="http://icdm2020.bigke.org/">IEEE International Conference on Data Mining (ICDM 2020)</a>, Sorrento, Italy, 2020. <text style="color:red">Best Paper Candidate.</text>
+									<li><a href="">Instance-wise Fea-ture Grouping</a><br /> 
+										Aria Masoomi, Chieh Wu, Tingting Zhao, Zifeng Wang, Peter Castaldi, Jennifer Dy. <br />
+										<a href="https://nips.cc/Conferences/2020/">Neural Information Processing Systems (NeurIPS 2020)</a>, Virtual, 2020.
+									<li><a href="https://genesys-lab.org/papers/1570567491-3.pdf">Finding a ‘New’ Needle in the Haystack: Unseen Radio Detection in Large Populations Using Deep Learning</a><br /> 
+										Andrey Gritsenko*, Zifeng Wang*, Jennifer Dy, Kaushik Chowdhury, and Stratis Ioannidis <br />
+										<a href="https://dyspan2019.ieee-dyspan.org/">IEEE International Symposium on Dynamic Spectrum Access Networks (DySPAN 2019)</a>, Newark, NJ, 2019. <text style="color:red">Best Paper Award.</text>
+									<li><a href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Liangliang_Ren_Collaborative_Deep_Reinforcement_ECCV_2018_paper.pdf">Collaborative Deep Reinforcement Learning for Multi-Object Tracking</a><br /> 
+										Liangliang Ren, Jiwen Lu,Zifeng Wang, Qi Tian, and Jie Zhou. <br />
+										<a href="https://eccv2018.org/">In Proceedings of the European Conference on Computer Vision (ECCV 2018)</a>, Munich, Germany, 2020.
+								</ul>
+								</font>
+							<h4>Journal Papers</h4>
+							<font size="-0.5">
+								<ul>
+									<li><a href="">Improved Prediction of Smoking Status via Isoform-Aware RNAseq Deep Learning Models</a><br />
+										Zifeng Wang, Aria Masoomi, Zhonghui Xu, Adel Boueiz, Sool Lee, Tingting Zhao, Michael Cho, Edwin K. Silverman, Craig Hersh, Jennifer Dy, Peter J Castaldi. <br />
+										Submitted to PLOS Genetics, under review.
+									<li><a href="">Radio Frequency Fingerprinting on the Edge</a><br />
+										Tong Jian, Yifan Gong, Zheng Zhan, Runbin Shi, Nasim Soltani, Zifeng Wang, et al. <br />
+										Submitted to IEEE Transactions on Mobile Computing, under review.
+									<li><a href="">Deep Learning for RFFingerprinting: A Massive Experimental Study</a><br />
+										Tong Jian, Bruno Rendon, Emmanuel Ojuba, Nasim Soltani,Zifeng Wang, et al. <br />
+										<a href="https://www.comsoc.org/publications/magazines/ieee-internet-things-magazine">IEEE Internet of Things Magazine 2020</a>.
+									<li><a href="">Profiling users by online shopping behaviors</a><br />
+										Huan Yan, Zifeng Wang, Tzu-Heng Lin, Yong Li, and Depeng Jin. <br />
+										<a href="https://www.springer.com/journal/11042">Multimedia Tools and Applications 2018</a>.
+								</ul>
+							</font>
+						</div>
+					</section>
+				
+					<section id="five">
+						<div class="container">
+							<h3>Awards</h3>
+							<ul>
+								<li><text style="color:black">Best Paper Candidate</text>, ICDM 2020 <br /> 
+								<li><text style="color:black">Best Paper Award</text>, DySPAN 2019 <br /> 
+								<li><text style="color:black">Travel Award</text>, DySPAN 2019 <br /> 
+								<li><text style="color:black">Travel Award</text>, NeurIPS 2019 <br /> 
+								<li><text style="color:black">Dean's Fellowship</text>, 2018 <br /> 
+									 Highest honor awarded to new PhD students in Northeastern University for their out standing academic background</li>
+								<li><text style="color:black">Evergrande Scholarship</text>, 2016 <br /> 
+									 Awarded to students with excellent academic performance, scientific potential and overall development. For about top 5% out of 233 students</li>
+								<li><text style="color:black">First Prize in Beijing Undergraduate Physics Competition</text>, 2015 <br />
+									High-level Physics competition, awarded to top 3% students</li>
+								<li><text style="color:black">Ranked 3th at 17th Electronic Design Contest</text>, 2015 <br />
+									Top robotic contest at Tsinghua University. Top 1% out of about 400 teams</li>
+							</ul>
+						</div>
+					</section>
+
+					<!-- Five -->
+					<section id="six">
+							<div class="container">
+								<h3>Skills</h3>
+								<!--<p>My skills mainly focus on learning and coding.</p> -->
+								<ul class="feature-icons">
+									<li class="fa-code">Deep learning frameworks like TensorFlow, Pytorch and Caffe</li>
+									<li class="fa-book">Good command of Python, C/C++, Java and MATLAB</li>
+									<li class="fa-cubes">Leadership and teamwork</li>
+									<li class="fa-coffee">Working with efficiency</li>
+									<li class="fa-bolt">Innovative ideas</li>
+									<li class="fa-users">Fast learning skills</li>
+								</ul>
+							</div>
+						</section>
+
+			<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<ul class="copyright">
+							<li>&copy; Zifeng Wang. All rights reserved.</li>
+						</ul>
+					</div>
+				</section>
+			
+		</div>
+	</body>
+</html>
