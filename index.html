@@ -1,10 +1,12 @@
-
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
   <title>Zifeng Wang's Homepage</title>
-  
+
   <meta name="author" content="Zifeng Wang">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="js/jquery.min.js"></script>
@@ -12,474 +14,658 @@
   <script src="js/jquery.scrolly.min.js"></script>
   <script src="js/skel.min.js"></script>
   <script src="js/skel-layers.min.js"></script>
+
+  <script type="text/javascript">
+    function toggle_vis(id) {
+      var e = document.getElementById(id);
+      if (e.style.display == 'none')
+        e.style.display = 'inline';
+      else
+        e.style.display = 'none';
+    }
+  </script>
+
   <!-- <script src="js/init.js"></script> -->
   <script src="js/carousel.js"></script>
 
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
   <link rel="icon" type="image/png" href="images/zifeng_avatar.jpg">
-  
+
 
   <style type="text/css">
-	.carousel {
-		-webkit-transform: translate3d(0,0,0);
-		background: rgba(0,0,0,0.85);
-		position: fixed;
-		right: 0;
-		bottom: 0;
-		min-width: 100%;
-		min-height: 100%;
-		width: auto;
-		height: auto;
-		display: none;
-		z-index: 1;
-	}
+    .carousel {
+      -webkit-transform: translate3d(0, 0, 0);
+      background: rgba(0, 0, 0, 0.85);
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      width: auto;
+      height: auto;
+      display: none;
+      z-index: 1;
+    }
 
-	.img-center-carousel {
-		position: absolute;
-		top: 0;
-		left: 0;
-		right: 0;
-		bottom: 0;
-		padding: 0;
-		margin: auto;
-		width: 60%;
-		height: auto;
-	}
+    .img-center-carousel {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 0;
+      margin: auto;
+      width: 60%;
+      height: auto;
+    }
 
-	.carousel-close {
-		position: absolute;
-		top: 25px;
-		right: 100px;
-		padding: 0;
-		margin: auto;
-		width: 50px;
-		height: auto;
-	}
-	.research {
-		margin-bottom: 30px;
-	}
-	.research h4{
-		float: left;
-	}
-	.research div{
-		text-align: end;
-		font-size:0.9em;
-	}
-	.thumbnail {
-		width: 100%;
-		float: left;
-		
-	}
-	.thumbnail-right {
-		margin-left: 35%;
-	}
-	#exp li {
-		margin-bottom: 50px;
-	}
-	.school-logo {
-		width: 6%;
-		float: left;
-	}
-	.school-text {
-		margin-left: 10%;
-		width:60%;
-	}
+    .carousel-close {
+      position: absolute;
+      top: 25px;
+      right: 100px;
+      padding: 0;
+      margin: auto;
+      width: 50px;
+      height: auto;
+    }
 
-</style>
+    .research {
+      margin-bottom: 30px;
+    }
+
+    .research h4 {
+      float: left;
+    }
+
+    .research div {
+      text-align: end;
+      font-size: 0.9em;
+    }
+
+    .thumbnail {
+      width: 100%;
+      float: left;
+
+    }
+
+    .thumbnail-right {
+      margin-left: 35%;
+    }
+
+    #exp li {
+      margin-bottom: 50px;
+    }
+
+    .school-logo {
+      width: 6%;
+      float: left;
+    }
+
+    .school-text {
+      margin-left: 10%;
+      width: 60%;
+    }
+  </style>
 
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Zifeng Wang</name>
-              </p>
-              <p> I am a fourth-year PhD student in Machine Learning at <a href="https://web.northeastern.edu/spiral/">SPIRAL Group</a>  
-                from <a href="https://www.northeastern.edu/">Northeastern University</a>, advised by 
-                Prof. <a href="http://www.ece.neu.edu/fac-ece/jdy/">Jennifer G. Dy</a>. 
-                I also work closely with Prof. <a href="https://ece.northeastern.edu/fac-ece/ioannidis/">Stratis Ioannidis</a>, 
-                and Prof. <a href="https://web.northeastern.edu/yanzhiwang/#_ga=2.65760046.1809272488.1657261940-1545783568.1564022696">Yanzhi Wang</a>.
-				        I also work as student researcher at <a href="https://research.google/teams/cloud-ai/">Google Cloud AI Research</a>, 
-                under the supervision of <a href="https://sites.google.com/view/zizhaozhang/home">Zizhao Zhang</a>, <a href="https://chl260.github.io/">Chen-Yu Lee</a>, and <a href="https://tomas.pfister.fi/">Tomas Pfister</a>. 
-                My other collaborators at Google includes <a href="https://people.eecs.berkeley.edu/~sayna/">Sayna Ebrahimi</a>, 
-                <a href="https://sites.google.com/view/hanzhang">Han Zhang</a>,
-                <a href="https://research.google/people/VincentPerot/">Vincent Perot</a>,
-                <a href="https://research.google/people/107194/">Ruoxi Sun</a>,
-                <a href="https://research.google/people/GuolongSu/">Guolong Su</a> and
-                <a href="https://resnick.caltech.edu/people/xiaoqi-ren">Xiaoqi Ren</a>.
-                
-			</p>
-			<p> I received my BS degree in Electronic Engineering from <a href="http://www.tsinghua.edu.cn/publish/thu2018en/index.html">Tsinghua University</a>, Beijing. 
-				During my college years, I also worked with Prof. <a href="http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/">Jiwen Lu</a> (Tsinghua), Prof. <a href = "https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a> (Princeton) on computer vision and Prof. <a href="http://fi.ee.tsinghua.edu.cn/~liyong/">Yong Li</a> (Tsinghua) on big data.
-			</p>
-              <p style="text-align:center">
-                <a href="mailto:zifengwang@ece.neu.edu">Email</a> &nbsp/&nbsp
-                <a href="https://scholar.google.co.il/citations?user=N1uBekcAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://www.linkedin.com/in/zifeng-wang-21b069b4/">LinkedIn</a> &nbsp/&nbsp
-                <a href="https://twitter.com/zifengwang315">Twitter</a> &nbsp/&nbsp
-                <a href="ZifengWang.pdf">Resume</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:20%;max-width:20%">
-              <a href="images/zifeng_avatar.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="images/zifeng_avatar.jpg" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-                <ul>
-					<li> Continual (Lifelong) learning </li>
-          <li> Data-efficient and parameter-efficient learning </li>
-					<li> Adversarial robustness and model compression </li>
-					<li> Deep learning applications in computer vision, natural language understanding, document understanding, healthcare, wireless communications, etc. </li>
-				</ul>
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+  <table
+    style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tbody>
+      <tr style="padding:0px">
+        <td style="padding:0px">
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr style="padding:0px">
+                <td style="padding:2.5%;width:63%;vertical-align:middle">
+                  <p style="text-align:center">
+                    <name>Zifeng Wang</name>
+                  </p>
+                  <p> I am a fifth-year PhD student in Machine Learning at <a
+                      href="https://web.northeastern.edu/spiral/">SPIRAL Group</a>
+                    from <a href="https://www.northeastern.edu/">Northeastern University</a>, advised by
+                    Prof. <a href="http://www.ece.neu.edu/fac-ece/jdy/">Jennifer G. Dy</a>.
+                    I also work closely with Prof. <a href="https://ece.northeastern.edu/fac-ece/ioannidis/">Stratis
+                      Ioannidis</a>,
+                    and Prof. <a
+                      href="https://web.northeastern.edu/yanzhiwang/#_ga=2.65760046.1809272488.1657261940-1545783568.1564022696">Yanzhi
+                      Wang</a>.
+                    I also work as student researcher at <a href="https://research.google/teams/cloud-ai/">Google Cloud
+                      AI Research</a>,
+                    under the supervision of <a href="https://sites.google.com/view/zizhaozhang/home">Zizhao Zhang</a>,
+                    <a href="https://chl260.github.io/">Chen-Yu Lee</a>, and <a href="https://tomas.pfister.fi/">Tomas
+                      Pfister</a>.
+                    My other collaborators at Google includes <a href="https://people.eecs.berkeley.edu/~sayna/">Sayna
+                      Ebrahimi</a>,
+                    <a href="https://sites.google.com/view/hanzhang">Han Zhang</a>,
+                    <a href="https://research.google/people/VincentPerot/">Vincent Perot</a>,
+                    <a href="https://research.google/people/107194/">Ruoxi Sun</a>,
+                    <a href="https://research.google/people/GuolongSu/">Guolong Su</a> and
+                    <a href="https://resnick.caltech.edu/people/xiaoqi-ren">Xiaoqi Ren</a>.
 
-		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Experiences</heading>
-              <p>
-                <ul id="exp" style="list-style:none;">
-					<li> <img class="school-logo" src="images/exp_logos/NEU.jpeg"><div class="school-text">Sep 2018 - Present, Northeastern University, <br />Research assistant at <a href="https://web.northeastern.edu/spiral/">SPIRAL Group</a> </div></li>
-					<li> <img class="school-logo" src="images/exp_logos/g.png"><div class="school-text">June 2021 - Present, Google, <br /> Student researcher / Research Intern at <a href="https://research.google/teams/cloud-ai/">Cloud AI Research</a></div></li>
-					<li> <img class="school-logo" src="images/exp_logos/Tsinghua.jpeg"><div class="school-text">Feb 2017 - July 2018, Tsinghua University, <br />Research assistant at <a href="http://ivg.au.tsinghua.edu.cn/index.php">i-Vision Group</a> </div></li>
-					<li> <img class="school-logo" src="images/exp_logos/UMich.jpeg"><div class="school-text">July 2017 - Sep 2017, University of Michigan, <br />Visiting researcher at <a href="https://pvl.cs.princeton.edu/"> Vision & Learning Lab</a> </div></li> 
-				</ul>
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
+                  </p>
+                  <p> I received my BS degree in Electronic Engineering from <a
+                      href="http://www.tsinghua.edu.cn/publish/thu2018en/index.html">Tsinghua University</a>, Beijing.
+                    During my college years, I also worked with Prof. <a
+                      href="http://ivg.au.tsinghua.edu.cn/Jiwen_Lu/">Jiwen Lu</a> (Tsinghua), Prof. <a
+                      href="https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a> (Princeton) on computer vision and
+                    Prof. <a href="http://fi.ee.tsinghua.edu.cn/~liyong/">Yong Li</a> (Tsinghua) on big data.
+                  <p>
+                  <mark>
+                    I am currently looking for full-time opportunities starting in 2023.
+                  </mark>
+                  </p>
+                  
+                  <p style="text-align:center">
+                    <a href="mailto:zifengwang@ece.neu.edu">Email</a> &nbsp/&nbsp
+                    <a href="https://scholar.google.co.il/citations?user=N1uBekcAAAAJ&hl=en">Google Scholar</a>
+                    &nbsp/&nbsp
+                    <a href="https://www.linkedin.com/in/zifeng-wang-21b069b4/">LinkedIn</a> &nbsp/&nbsp
+                    <a href="https://twitter.com/zifengwang315">Twitter</a> &nbsp/&nbsp
+                    <a href="ZifengWang.pdf">Resume</a>
+                  </p>
+                </td>
+                <td style="padding:2.5%;width:20%;max-width:20%">
+                  <a href="images/zifeng_avatar.jpg"><img style="width:100%;max-width:100%" alt="profile photo"
+                      src="images/zifeng_avatar.jpg" class="hoverZoomLink"></a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>Research</heading>
+                  <p>
+                  <ul>
+                    <li> Continual (Lifelong) learning </li>
+                    <li> Data-efficient and parameter-efficient learning </li>
+                    <li> Adversarial robustness and model compression </li>
+                    <li> Deep learning applications in computer vision, natural language understanding, document
+                      understanding, healthcare, wireless communications, etc. </li>
+                  </ul>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
 
-        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">          
-            <tr><td><heading>Selected Publications</heading> <br>
-                    <a href="https://scholar.google.co.il/citations?user=N1uBekcAAAAJ&hl=en">Google Scholar</a> <font color="grey">for all publications</font>.
-            </td></tr>
-
-            <tr>            
-              <td width="32%">
-        				<img class="thumbnail" src="paper_images/dualprompt.png" data-id="hbar-carousel"></img>
-        				<div id="hbar-carousel" class="carousel">
-        					<img class="img-center-carousel" src="paper_images/dualprompt.png" alt="">	
-        					<a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="hbar-carousel" class="carousel-close"></a>
-        				</div>
+          <!-- <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody><tr>
+              <td style="padding:20px;width:100%;vertical-align:middle">
+                <heading>News</heading>
+                <p> 
+                  <li> Our <a href="https://arxiv.org/pdf/2204.04799.pdf"> new paper on Continual Learning</a> is accepted at ECCV 2022!</li> 
+                  <li> I have an invited talk at the <a href="https://rosecvpr22.github.io/index.html#invited-speakers">CVPR 22 workshop on Robustness in Sequential Data</a>.
+                  <li> <a href="https://arxiv.org/pdf/2206.07240.pdf"> New paper on test-time adaptation</a> is out!</li> 
+                  <li> Our paper <a href="https://arxiv.org/pdf/2204.10377.pdf"> Contrastive Test-Time Adaptation </a> got accepted at CVPR 2022.</li> 
+                  <li>I joined <a href="https://research.google/teams/cloud-ai/"> Google Cloud AI Research</a> in November 2021!</li>
+                  <li>Our paper <a href="https://arxiv.org/pdf/2107.03315">Predicting with Confidence on Unseen Distributions</a> got accepted at ICCV 2021!</li>
+                  <li>I gave an invited talk at the <a href="https://sites.google.com/view/clvision2021">CVPR 21 Workshop on Continual Learning in Computer Vision</a>. Video is <a href="https://youtu.be/NeqPhripSkI?t=817">here</a>. </li>
+                  <li>I gave an invited talk at Google AI, Facebook AI, and Amazon on "Active, continual, and adaptive learning".</li>
+                  <li>I was recognized as an Outstanding Reviewer at <a href="http://cvpr2021.thecvf.com/node/184">CVPR 2021</a>. </li>
+            <li> <a href="javascript:toggle_vis('news')">show more</a> </li>
+            <div id="news" style="display:none"> 
+                  <li> Our paper <a href="https://openreview.net/pdf?id=tHgJoMfy6nI">Remembering for the Right Reasons</a> got accepted at ICLR 2021</li>        
+              <li> Our paper <a href="https://arxiv.org/pdf/2003.09553.pdf">Adversarial Continual Learning </a> got accepted at ECCV 2020</li>        
+              <li> I graduated from both ME and EECS departments in May 2020 and started my postdoc at BAIR! </li></ul> 
+            <li> I received <a href="https://www2.eecs.berkeley.edu/Students/Awards/11/?_ga=2.121718411.1669981988.1587577753-1589437370.1583733679">the Eugene L. Lawler Prize </a> from EECS department!</li>
+              <font face="Helvetica, &#39;sans&#39;" size="3" color="black">
+              <!-- <ul><li> New paper <a href="https://arxiv.org/pdf/2003.09553.pdf">"Adversarial Continual Learning" </a> on arXiv. <a href="https://github.com/facebookresearch/Adversarial-Continual-Learning">Code is also released!  </a></li></ul>
+              <font face="Helvetica, &#39;sans&#39;" size="3" color="black">        
+              <li> I will be co-organizing the <a href="https://sites.google.com/view/cl-icml">Workshop on Continual Learning</a>, co-occuring with ICML 2020</li> 
+              <font face="Helvetica, &#39;sans&#39;" size="3" color="black">            
+             <li> Our paper <a href="https://openreview.net/pdf?id=HklUCCVKDB">Uncertainty-guided Continual Learning with Bayesian Neural Networks </a> got accepted at ICLR 2020</li>
+              <li>I spent summer 2019 at Facebook AI Research in Menlo Park as an intern.</li> 
+              <li> Our paper <a href="https://arxiv.org/abs/1904.00370">Variational Advarsarial Active Learning </a> got accepted at ICCV 2019 as on <font color="green"><strong>Oral</strong></font>! (4.3%) </li>          
+              <li> I co-organized the <a href="https://wicvworkshop.github.io/CVPR2019/index.html#">6th Women in Computer Vision (WiCV) Workshop</a> , co-located with CVPR in June 2019</li>
+              </div>
+                </p>
               </td>
-              
+            </tr>
+            </tbody></table> -->
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>News</heading>
+                  <p>
+                  <ul>
+                    <li> 09/2022: Our paper on efficient continual learning is accepted at <b> NeurIPS 2022 </b>  </li>
+                    <li> 09/2022: I will give a talk about prompting-based continual learning at <b> <a href="https://www.continualai.org/">ContinualAI</a> </b></li>
+                    <li> 09/2022: Our paper on adversarially robust pruning is accepted at <b> ICDM 2022 </b> </li>
+                    <li> 07/2022: Our paper on prompting-based continual learning is accepted at <b> ECCV 2022 </b> </li>
+                    <li> 03/2022: Our paper on prompting-based continual learning is accepted at <b> CVPR 2022 </b> </li>
+                    <li> 02/2022: Our paper on Bayesian continual learning is accepted by <b> Neural Networks </b> </li>
+                    <li> 09/2021: Our paper on HSIC for adversarial robustness is accepted at <b> NeurIPS 2021 </b>  </li>
+                    <li> 09/2021: Our paper on deep learning for smoking prediction is accepted by <b> PLOS Computational Biology </b>  </li>
+                    <li> 05/2021: I started my research internship at <b> <a href="https://research.google/teams/cloud-ai/">Google Cloud AI Research</a>  </b> </li>
+                    <li> <a href="javascript:toggle_vis('news')">Earlier news</a> </li>
+                    <div id="news" style="display:none">
+                      <li> 09/2020: Our paper on feature grouping is accepted at <b> NeurIPS 2021 </b>  </li>
+                      <li> 08/2020: Two papers on continual learning and open-world class discovery are accepted at <b> ICDM 2020 </b>, with one selected as <font color=red> the best papar candidate </font> </li>
+                      <li> 08/2019: One paper on unseen class detection is accepted at <b> DySPAN 2019 </b> as the <font color=red> best papar </font> </li>
+                    </div>
+                  </ul>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table
+            style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+            <tbody>
+              <tr>
+                <td style="padding:20px;width:100%;vertical-align:middle">
+                  <heading>Experiences</heading>
+                  <p>
+                  <ul id="exp" style="list-style:none;">
+                    <li> <img class="school-logo" src="images/exp_logos/NEU.jpeg">
+                      <div class="school-text">Sep 2018 - Present, Northeastern University, <br />Research assistant at
+                        <a href="https://web.northeastern.edu/spiral/">SPIRAL Group</a>
+                      </div>
+                    </li>
+                    <li> <img class="school-logo" src="images/exp_logos/g.png">
+                      <div class="school-text">June 2021 - Present, Google, <br /> Student researcher / Research Intern
+                        at <a href="https://research.google/teams/cloud-ai/">Cloud AI Research</a></div>
+                    </li>
+                    <li> <img class="school-logo" src="images/exp_logos/Tsinghua.jpeg">
+                      <div class="school-text">Feb 2017 - July 2018, Tsinghua University, <br />Research assistant at <a
+                          href="http://ivg.au.tsinghua.edu.cn/index.php">i-Vision Group</a> </div>
+                    </li>
+                    <li> <img class="school-logo" src="images/exp_logos/UMich.jpeg">
+                      <div class="school-text">July 2017 - Sep 2017, University of Michigan, <br />Visiting researcher
+                        at <a href="https://pvl.cs.princeton.edu/"> Vision & Learning Lab</a> </div>
+                    </li>
+                  </ul>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <tr>
+              <td>
+                <heading>Selected Publications</heading> <br>
+                <a href="https://scholar.google.co.il/citations?user=N1uBekcAAAAJ&hl=en">Google Scholar</a>
+                <font color="grey">for all publications</font>.
+              </td>
+            </tr>
+
+            <tr>
+              <td width="32%">
+                <img class="thumbnail" src="paper_images/dualprompt.png" data-id="hbar-carousel"></img>
+                <div id="hbar-carousel" class="carousel">
+                  <img class="img-center-carousel" src="paper_images/dualprompt.png" alt="">
+                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt=""
+                      data-carousel-id="hbar-carousel" class="carousel-close"></a>
+                </div>
+              </td>
+
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://arxiv.org/pdf/2204.04799.pdf">
                   <papertitle>DualPrompt: Complementary Prompting for
                     Rehearsal-free Continual Learning</papertitle>
                 </a>
                 <br>
-                <b>Zifeng Wang</b>, Zizhao Zhang, Sayna Ebrahimi, Ruoxi Sun, Han Zhang, Chen-Yu Lee, Xiaoqi Ren, Guolong Su, Vincent Perot, Jennifer Dy, Tomas Pfister<br>              
+                <b>Zifeng Wang</b>, Zizhao Zhang, Sayna Ebrahimi, Ruoxi Sun, Han Zhang, Chen-Yu Lee, Xiaoqi Ren, Guolong
+                Su, Vincent Perot, Jennifer Dy, Tomas Pfister<br>
                 <em>European Conference on Computer Vision (<b>ECCV</b>), 2022. <br> </em>
-                
-                [<a href="https://arxiv.org/pdf/2204.04799.pdf">paper</a>] [<a href="https://github.com/google-research/l2p">code</a>]
+
+                [<a href="https://arxiv.org/pdf/2204.04799.pdf">paper</a>] [<a
+                  href="https://github.com/google-research/l2p">code</a>]
                 <br>
                 <p></p>
-                <p>   DualPrompt presents a novel approach to attach complementary prompts to the pre-trained backbone,
-                  and then formulates the continual learning objective as learning task-invariant and task-specific “instructions". </p>
+                <p> DualPrompt presents a novel approach to attach complementary prompts to the pre-trained backbone,
+                  and then formulates the continual learning objective as learning task-invariant and task-specific
+                  “instructions". </p>
               </td>
             </tr>
 
-            <tr>            
+            <tr>
               <td width="32%">
-        				<img class="thumbnail" src="paper_images/l2p.png" data-id="hbar-carousel"></img>
-        				<div id="hbar-carousel" class="carousel">
-        					<img class="img-center-carousel" src="paper_images/l2p.png" alt="">	
-        					<a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="hbar-carousel" class="carousel-close"></a>
-        				</div>
+                <img class="thumbnail" src="paper_images/l2p.png" data-id="hbar-carousel"></img>
+                <div id="hbar-carousel" class="carousel">
+                  <img class="img-center-carousel" src="paper_images/l2p.png" alt="">
+                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt=""
+                      data-carousel-id="hbar-carousel" class="carousel-close"></a>
+                </div>
               </td>
-              
+
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://arxiv.org/pdf/2112.08654.pdf">
                   <papertitle>Learning to Prompt for Continual Learning</papertitle>
                 </a>
                 <br>
-                <b>Zifeng Wang</b>, Zizhao Zhang, Chen-Yu Lee, Han Zhang, Ruoxi Sun, Xiaoqi Ren, Guolong Su, Vincent Perot, Jennifer Dy, Tomas Pfister<br>              
+                <b>Zifeng Wang</b>, Zizhao Zhang, Chen-Yu Lee, Han Zhang, Ruoxi Sun, Xiaoqi Ren, Guolong Su, Vincent
+                Perot, Jennifer Dy, Tomas Pfister<br>
                 <em>IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2022. <br> </em>
-                
-                [<a href="https://arxiv.org/pdf/2112.08654.pdf">paper</a>] [<a href="https://github.com/google-research/l2p">code</a>] [<a href="https://ai.googleblog.com/2022/04/learning-to-prompt-for-continual.html">blog</a>]
+
+                [<a href="https://arxiv.org/pdf/2112.08654.pdf">paper</a>] [<a
+                  href="https://github.com/google-research/l2p">code</a>] [<a
+                  href="https://ai.googleblog.com/2022/04/learning-to-prompt-for-continual.html">blog</a>]
                 <br>
                 <p></p>
-                <p>  We propose a new learning paradigm for continual learning: our method learns to dynamically
+                <p> We propose a new learning paradigm for continual learning: our method learns to dynamically
                   prompt (L2P) a pre-trained model to learn tasks sequentially under different task transitions. </p>
               </td>
             </tr>
 
-            <tr>            
+            <tr>
               <td width="32%">
-        				<img class="thumbnail" src="paper_images/dbull.png" data-id="hbar-carousel"></img>
-        				<div id="hbar-carousel" class="carousel">
-        					<img class="img-center-carousel" src="paper_images/dbull.png" alt="">	
-        					<a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="hbar-carousel" class="carousel-close"></a>
-        				</div>
+                <img class="thumbnail" src="paper_images/dbull.png" data-id="hbar-carousel"></img>
+                <div id="hbar-carousel" class="carousel">
+                  <img class="img-center-carousel" src="paper_images/dbull.png" alt="">
+                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt=""
+                      data-carousel-id="hbar-carousel" class="carousel-close"></a>
+                </div>
               </td>
-              
+
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://arxiv.org/pdf/2106.07035.pdf">
                   <papertitle>Deep Bayesian Unsupervised Lifelong Learning</papertitle>
                 </a>
                 <br>
-                Tingting Zhao*, <b>Zifeng Wang*</b>, Aria Masoomi, Jennifer Dy<br>              
+                Tingting Zhao*, <b>Zifeng Wang*</b>, Aria Masoomi, Jennifer Dy<br>
                 <em>Neural Networks, 2022. <br> </em>
-                
-                [<a href="https://arxiv.org/pdf/2106.07035.pdf">paper</a>] [<a href="https://github.com/KingSpencer/DBULL">code</a>]
+
+                [<a href="https://arxiv.org/pdf/2106.07035.pdf">paper</a>] [<a
+                  href="https://github.com/KingSpencer/DBULL">code</a>]
                 <br>
                 <p></p>
-                <p> We develop a fully Bayesian inference framework for ULL with a novel end-to-end Deep Bayesian Unsupervised Lifelong
+                <p> We develop a fully Bayesian inference framework for ULL with a novel end-to-end Deep Bayesian
+                  Unsupervised Lifelong
                   Learning (DBULL) algorithm. </p>
               </td>
             </tr>
 
 
 
-            <tr>            
+            <tr>
               <td width="32%">
-        				<img class="thumbnail" src="paper_images/hbar.png" data-id="hbar-carousel"></img>
-        				<div id="hbar-carousel" class="carousel">
-        					<img class="img-center-carousel" src="paper_images/hbar.png" alt="">	
-        					<a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="hbar-carousel" class="carousel-close"></a>
-        				</div>
+                <img class="thumbnail" src="paper_images/hbar.png" data-id="hbar-carousel"></img>
+                <div id="hbar-carousel" class="carousel">
+                  <img class="img-center-carousel" src="paper_images/hbar.png" alt="">
+                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt=""
+                      data-carousel-id="hbar-carousel" class="carousel-close"></a>
+                </div>
               </td>
-              
+
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://arxiv.org/pdf/2106.02734.pdf">
                   <papertitle>Revisiting Hilbert-Schmidt Information Bottleneck
-					           for Adversarial Robustness</papertitle>
+                    for Adversarial Robustness</papertitle>
                 </a>
                 <br>
-                <b>Zifeng Wang*</b>, Tong Jian*, Aria Masoomi, Stratis Ioannidis, Jennifer Dy<br>              
+                <b>Zifeng Wang*</b>, Tong Jian*, Aria Masoomi, Stratis Ioannidis, Jennifer Dy<br>
                 <em>Neural Information Processing Systems (<b>NeurIPS</b>), 2021. <br> </em>
-                [<a href="https://arxiv.org/pdf/2106.02734.pdf">paper</a>] [<a href="https://github.com/neu-spiral/HBaR">code</a>]
+                [<a href="https://arxiv.org/pdf/2106.02734.pdf">paper</a>] [<a
+                  href="https://github.com/neu-spiral/HBaR">code</a>]
                 <br>
-                <font color=red> Invited oral presentation at <a href="https://meetings.informs.org/wordpress/indianapolis2022/">INFORMS 2022</a></font> <br>
+                <font color=red> Invited oral presentation at <a
+                    href="https://meetings.informs.org/wordpress/indianapolis2022/">INFORMS 2022</a></font> <br>
                 <p></p>
                 <p> We investigate the HSIC (Hilbert-Schmidt independence criterion) bottleneck as a
-					       regularizer for learning an adversarially robust deep neural network classifier, both theoretically and empirically.</p>
+                  regularizer for learning an adversarially robust deep neural network classifier, both theoretically
+                  and empirically.</p>
               </td>
             </tr>
 
-            <tr>            
+            <tr>
               <td width="32%">
                 <img class="thumbnail" src="paper_images/smoking.png" data-id="smoking-carousel"></img>
                 <div id="smoking-carousel" class="carousel">
-                  <img class="img-center-carousel" src="paper_images/smoking.png" alt="">  
-                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="smoking-carousel" class="carousel-close"></a>
+                  <img class="img-center-carousel" src="paper_images/smoking.png" alt="">
+                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt=""
+                      data-carousel-id="smoking-carousel" class="carousel-close"></a>
                 </div>
               </td>
-              
+
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009433">
-                  <papertitle>Improved prediction of smoking status via isoform-aware RNA-seq deep learning models</papertitle>
+                  <papertitle>Improved prediction of smoking status via isoform-aware RNA-seq deep learning models
+                  </papertitle>
                 </a>
                 <br>
-                <b>Zifeng Wang</b>, Aria Masoomi, Zhonghui Xu, Adel Boueiz, Sool Lee, Tingting Zhao, Russell Bowler, Michael Cho, Edwin K Silverman, Craig Hersh, Jennifer Dy, Peter J Castaldi<br>              
+                <b>Zifeng Wang</b>, Aria Masoomi, Zhonghui Xu, Adel Boueiz, Sool Lee, Tingting Zhao, Russell Bowler,
+                Michael Cho, Edwin K Silverman, Craig Hersh, Jennifer Dy, Peter J Castaldi<br>
                 <em>PLOS Computational Biology, 2021. <br> </em>
                 [<a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1009433">paper</a>]
                 <br>
                 <p></p>
-                <p> We propose a novel deep learning model to incorporate prior knowledge regarding the relationship of exons to transcript isoforms. We hypothesized that since smoking alters patterns of exon and isoform usage, greater predictive accuracy could be obtained by using exon and isoform-level quantifications to predict smoking status.</p>
+                <p> We propose a novel deep learning model to incorporate prior knowledge regarding the relationship of
+                  exons to transcript isoforms. We hypothesized that since smoking alters patterns of exon and isoform
+                  usage, greater predictive accuracy could be obtained by using exon and isoform-level quantifications
+                  to predict smoking status.</p>
               </td>
             </tr>
 
-            <tr>            
+            <tr>
               <td width="32%">
                 <img class="thumbnail" src="paper_images/lps.png" data-id="lps-carousel"></img>
                 <div id="lps-carousel" class="carousel">
-                  <img class="img-center-carousel" src="paper_images/lps.png" alt="">  
-                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="lps-carousel" class="carousel-close"></a>
+                  <img class="img-center-carousel" src="paper_images/lps.png" alt="">
+                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt=""
+                      data-carousel-id="lps-carousel" class="carousel-close"></a>
                 </div>
               </td>
-              
+
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://ieeexplore.ieee.org/abstract/document/9338408">
                   <papertitle>Learn-Prune-Share for Lifelong Learning</papertitle>
                 </a>
                 <br>
-                <b>Zifeng Wang*</b>, Tong Jian*, Kaushik Chowdhury, Yanzhi Wang, Jennifer Dy, Stratis Ioannidis <br>         
+                <b>Zifeng Wang*</b>, Tong Jian*, Kaushik Chowdhury, Yanzhi Wang, Jennifer Dy, Stratis Ioannidis <br>
                 <em>International Conference on Data Mining (<b>ICDM</b>), 2020.<br> </em>
-                [<a href="https://arxiv.org/pdf/2012.06956.pdf">paper</a>] 
+                [<a href="https://arxiv.org/pdf/2012.06956.pdf">paper</a>]
                 <br>
                 <p></p>
-                <p> We propose a learn-prune-share (LPS) algorithm which addresses the challenges of catastrophic forgetting, parsimony, and knowledge reuse simultaneously.</p>
+                <p> We propose a learn-prune-share (LPS) algorithm which addresses the challenges of catastrophic
+                  forgetting, parsimony, and knowledge reuse simultaneously.</p>
               </td>
             </tr>
 
-            <tr>            
+            <tr>
               <td width="32%">
                 <img class="thumbnail" src="paper_images/knet.png" data-id="knet-carousel"></img>
                 <div id="knet-carousel" class="carousel">
-                  <img class="img-center-carousel" src="paper_images/knet.png" alt="">  
-                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="knet-carousel" class="carousel-close"></a>
+                  <img class="img-center-carousel" src="paper_images/knet.png" alt="">
+                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt=""
+                      data-carousel-id="knet-carousel" class="carousel-close"></a>
                 </div>
               </td>
-              
+
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://ieeexplore.ieee.org/abstract/document/9338431">
                   <papertitle>Open-world class discovery with kernel networks</papertitle>
                 </a>
                 <br>
-                <b>Zifeng Wang</b>, Batool Salehi, Andrey Gritsenko, Kaushik Chowdhury, Stratis Ioannidis, Jennifer Dy   <br>          
+                <b>Zifeng Wang</b>, Batool Salehi, Andrey Gritsenko, Kaushik Chowdhury, Stratis Ioannidis, Jennifer Dy
+                <br>
                 <em>International Conference on Data Mining (<b>ICDM</b>), 2020.<br> </em>
                 <font color=red> Best papar candidate </font> <br>
-                [<a href="https://arxiv.org/pdf/2012.06957.pdf">paper</a>] 
+                [<a href="https://arxiv.org/pdf/2012.06957.pdf">paper</a>]
                 <br>
                 <p></p>
-                <p> We propose Class Discovery Kernel Network with Expansion (CD-KNet-Exp), a deep learning framework for open-world class discovery problem.</p>
+                <p> We propose Class Discovery Kernel Network with Expansion (CD-KNet-Exp), a deep learning framework
+                  for open-world class discovery problem.</p>
               </td>
             </tr>
 
-            <tr>            
+            <tr>
               <td width="32%">
                 <img class="thumbnail" src="paper_images/ifg.png" data-id="ifg-carousel"></img>
                 <div id="ifg-carousel" class="carousel">
-                  <img class="img-center-carousel" src="paper_images/ifg.png" alt="">  
-                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="ifg-carousel" class="carousel-close"></a>
+                  <img class="img-center-carousel" src="paper_images/ifg.png" alt="">
+                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt=""
+                      data-carousel-id="ifg-carousel" class="carousel-close"></a>
                 </div>
               </td>
-              
+
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://proceedings.neurips.cc/paper/2020/hash/9b10a919ddeb07e103dc05ff523afe38-Abstract.html">
                   <papertitle>Instance-wise Feature Grouping</papertitle>
                 </a>
                 <br>
-                Aria Masoomi, Chieh Wu, Tingting Zhao, <b>Zifeng Wang</b>, Peter Castaldi, Jennifer Dy <br>          
+                Aria Masoomi, Chieh Wu, Tingting Zhao, <b>Zifeng Wang</b>, Peter Castaldi, Jennifer Dy <br>
                 <em>Neural Information Processing Systems (<b>NeurIPS</b>), 2020. <br> </em>
-                [<a href="https://zhaottcrystal.github.io/pdf/InstanceFeatureSelection.pdf">paper</a>] 
+                [<a href="https://zhaottcrystal.github.io/pdf/InstanceFeatureSelection.pdf">paper</a>]
                 <br>
                 <p></p>
-                <p> We formally define two types of redundancies using information theory: Representation and Relevant redundancies. We leverage these redundancies to design a formulation for instance-wise feature group discovery and reveal a theoretical guideline to help discover the appropriate number of groups.</p>
+                <p> We formally define two types of redundancies using information theory: Representation and Relevant
+                  redundancies. We leverage these redundancies to design a formulation for instance-wise feature group
+                  discovery and reveal a theoretical guideline to help discover the appropriate number of groups.</p>
               </td>
             </tr>
 
 
-            <tr>            
+            <tr>
               <td width="32%">
                 <img class="thumbnail" src="paper_images/new_device.png" data-id="new_device-carousel"></img>
                 <div id="new_device-carousel" class="carousel">
-                  <img class="img-center-carousel" src="paper_images/new_device.png" alt="">  
-                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="new_device-carousel" class="carousel-close"></a>
+                  <img class="img-center-carousel" src="paper_images/new_device.png" alt="">
+                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt=""
+                      data-carousel-id="new_device-carousel" class="carousel-close"></a>
                 </div>
               </td>
-              
+
               <td style="padding:20px;width:75%;vertical-align:middle">
                 <a href="https://ieeexplore.ieee.org/abstract/document/8935862">
-                  <papertitle>Finding a ‘new’ needle in the haystack: Unseen radio detection in large populations using deep learning</papertitle>
+                  <papertitle>Finding a ‘new’ needle in the haystack: Unseen radio detection in large populations using
+                    deep learning</papertitle>
                 </a>
                 <br>
-                Andrey Gritsenko*, <b>Zifeng Wang*</b>, Tong Jian, Jennifer Dy, Kaushik Chowdhury, Stratis Ioannidis <br>         
+                Andrey Gritsenko*, <b>Zifeng Wang*</b>, Tong Jian, Jennifer Dy, Kaushik Chowdhury, Stratis Ioannidis
+                <br>
                 <em> IEEE International Symposium on Dynamic Spectrum Access Networks (<b>DySPAN</b>), 2019. <br> </em>
-                [<a href="https://www.researchgate.net/profile/Andrey-Gritsenko/publication/338074668_Finding_a_'New'_Needle_in_the_Haystack_Unseen_Radio_Detection_in_Large_Populations_Using_Deep_Learning/links/5e5d512a4585152ce80104af/Finding-a-New-Needle-in-the-Haystack-Unseen-Radio-Detection-in-Large-Populations-Using-Deep-Learning.pdf">paper</a>]
-                [<a href="https://coe.northeastern.edu/news/ece-team-wins-best-paper-award-at-ieee-dyspan-2019/">news</a>] 
+                [<a
+                  href="https://www.researchgate.net/profile/Andrey-Gritsenko/publication/338074668_Finding_a_'New'_Needle_in_the_Haystack_Unseen_Radio_Detection_in_Large_Populations_Using_Deep_Learning/links/5e5d512a4585152ce80104af/Finding-a-New-Needle-in-the-Haystack-Unseen-Radio-Detection-in-Large-Populations-Using-Deep-Learning.pdf">paper</a>]
+                [<a
+                  href="https://coe.northeastern.edu/news/ece-team-wins-best-paper-award-at-ieee-dyspan-2019/">news</a>]
                 <br>
                 <font color=red> Best papar award </font> <br>
                 <p></p>
-                <p> We propose a novel approach that facilitates new class detection without retraining a neural network, and perform extensive analysis of the proposed model both in terms of model parameters and real-world datasets.</p>
+                <p> We propose a novel approach that facilitates new class detection without retraining a neural
+                  network, and perform extensive analysis of the proposed model both in terms of model parameters and
+                  real-world datasets.</p>
               </td>
             </tr>
 
-            <tr>            
+            <tr>
               <td width="32%">
                 <img class="thumbnail" src="paper_images/cdrl.png" data-id="cdrl-carousel"></img>
                 <div id="cdrl-carousel" class="carousel">
-                  <img class="img-center-carousel" src="paper_images/cdrl.png" alt="">  
-                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt="" data-carousel-id="cdrl-carousel" class="carousel-close"></a>
+                  <img class="img-center-carousel" src="paper_images/cdrl.png" alt="">
+                  <a href="javascript:void(0)"><img src="images/close-transparent.png" alt=""
+                      data-carousel-id="cdrl-carousel" class="carousel-close"></a>
                 </div>
               </td>
-              
+
               <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://openaccess.thecvf.com/content_ECCV_2018/html/Liangliang_Ren_Collaborative_Deep_Reinforcement_ECCV_2018_paper.html">
+                <a
+                  href="https://openaccess.thecvf.com/content_ECCV_2018/html/Liangliang_Ren_Collaborative_Deep_Reinforcement_ECCV_2018_paper.html">
                   <papertitle>Collaborative deep reinforcement learning for multi-object tracking</papertitle>
                 </a>
                 <br>
-                Liangliang Ren, Jiwen Lu, <b>Zifeng Wang</b>, Qi Tian, Jie Zhou <br>        
+                Liangliang Ren, Jiwen Lu, <b>Zifeng Wang</b>, Qi Tian, Jie Zhou <br>
                 <em> European Conference on Computer Vision (<b>ECCV</b>), 2018. <br> </em>
-                [<a href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Liangliang_Ren_Collaborative_Deep_Reinforcement_ECCV_2018_paper.pdf">paper</a>]
+                [<a
+                  href="https://openaccess.thecvf.com/content_ECCV_2018/papers/Liangliang_Ren_Collaborative_Deep_Reinforcement_ECCV_2018_paper.pdf">paper</a>]
                 <br>
                 <p></p>
-                <p> We propose a collaborative deep reinforcement learning (C-DRL) method for multi-object tracking. Specifically, we consider each object as an agent and track it via the prediction network, and seek the optimal tracked results by exploiting the collaborative interactions of different agents and environments via the decision network</p>
+                <p> We propose a collaborative deep reinforcement learning (C-DRL) method for multi-object tracking.
+                  Specifically, we consider each object as an agent and track it via the prediction network, and seek
+                  the optimal tracked results by exploiting the collaborative interactions of different agents and
+                  environments via the decision network</p>
               </td>
             </tr>
-          
+
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
               <tr>
                 <td width="100%" valign="middle">
                   <heading>Invited Talks</heading>
                   <ul>
-                  <li><papertitle>Learning to Prompt for Rehearsal-free Continual Learning</papertitle><br />
-                    <em><a href="https://theaitalks.org/">AI Talks SG</a>, 2022, Remote </em><br />
-                  <li><papertitle>Revisiting Hilbert-Schmidt Information Bottleneck for Adversarial Robustness</papertitle><br />
-                    <em><a href="https://meetings.informs.org/wordpress/indianapolis2022/">INFORMS Annual Meeting</a>, 2022, Indianapolis, Indiana</em><br />
-                    [<a href="https://www.abstractsonline.com/pp8/#!/10693/presentation/4612">abstract</a>]
-                  <li><papertitle>Revisiting Hilbert-Schmidt Information Bottleneck for Adversarial Robustness (Chinese version)</papertitle><br />
-                    <em><a href="http://www.aitime.cn/">AI Time</a>, 2022, Remote<br /></em>
-                    [<a href="https://www.koushare.com/video/videodetail/24409">recording</a>][<a href="http://www.aitime.cn/Activity/activityDetail?id=359">blog</a>]
-              </ul>
+                    <li>
+                      <papertitle>Learning to Prompt for Rehearsal-free Continual Learning</papertitle><br />
+                      <em><a href="https://theaitalks.org/">AI Talks SG</a>, 2022, Remote </em><br />
+                    <li>
+                      <papertitle>Revisiting Hilbert-Schmidt Information Bottleneck for Adversarial Robustness
+                      </papertitle><br />
+                      <em><a href="https://meetings.informs.org/wordpress/indianapolis2022/">INFORMS Annual Meeting</a>,
+                        2022, Indianapolis, Indiana</em><br />
+                      [<a href="https://www.abstractsonline.com/pp8/#!/10693/presentation/4612">abstract</a>]
+                    <li>
+                      <papertitle>Revisiting Hilbert-Schmidt Information Bottleneck for Adversarial Robustness (Chinese
+                        version)</papertitle><br />
+                      <em><a href="http://www.aitime.cn/">AI Time</a>, 2022, Remote<br /></em>
+                      [<a href="https://www.koushare.com/video/videodetail/24409">recording</a>][<a
+                        href="http://www.aitime.cn/Activity/activityDetail?id=359">blog</a>]
+                  </ul>
                 </td>
               </tr>
-          </table>
+            </table>
 
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
               <tr>
                 <td width="100%" valign="middle">
                   <heading>Awards</heading>
                   <ul>
-                  <li><text style="color:black">Best Paper Candidate</text>, ICDM 2020 <br /> 
-                  <li><text style="color:black">Best Paper Award</text>, DySPAN 2019 <br /> 
-                  <li><text style="color:black">Travel Award</text>, DySPAN 2019 <br /> 
-                  <li><text style="color:black">Travel Award</text>, NeurIPS 2019 <br /> 
-                  <li><text style="color:black">Dean's Fellowship</text>, Northeastern University, 2018 <br /> 
-                    <font color="grey" style="italic" size="2pt"><em>&nbsp&nbsp Highest honor awarded to new PhD students for out standing academic background.</em></font>
-                <li><text style="color:black">Evergrande Scholarship</text>, Tsinghua University, 2016 <br /> 
-                   <font color="grey" style="italic" size="2pt"><em>&nbsp&nbsp Awarded to students with excellent academic performance, scientific potential and overall development.</em> </font>
-              </ul>
+                    <li><text style="color:black">Best Paper Candidate</text>, ICDM 2020 <br />
+                    <li><text style="color:black">Best Paper Award</text>, DySPAN 2019 <br />
+                    <li><text style="color:black">Travel Award</text>, DySPAN 2019 <br />
+                    <li><text style="color:black">Travel Award</text>, NeurIPS 2019 <br />
+                    <li><text style="color:black">Dean's Fellowship</text>, Northeastern University, 2018 <br />
+                      <font color="grey" style="italic" size="2pt"><em>&nbsp&nbsp Highest honor awarded to new PhD
+                          students for out standing academic background.</em></font>
+                    <li><text style="color:black">Evergrande Scholarship</text>, Tsinghua University, 2016 <br />
+                      <font color="grey" style="italic" size="2pt"><em>&nbsp&nbsp Awarded to students with excellent
+                          academic performance, scientific potential and overall development.</em> </font>
+                  </ul>
                 </td>
               </tr>
-          </table>
+            </table>
 
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
               <tr>
                 <td width="100%" valign="middle">
                   <heading>Academic Service</heading>
-                  <p>                    
+                  <p>
                     <strong>Reviewer</strong>: NeurIPS, ICML, ICLR, TPAMI
                   </p>
                 </td>
               </tr>
-          </table>
+            </table>
 
 
 
-          <div align="center">
-          <div style="height:200px; width:200px;" > 
-            <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=PtmqIDsoG0APo3esKNzTVAOJtnkg9IGD6POJuZBuXCk"></script>
-          </div>
-          </div>
-          
-          <p align="right">
+            <div align="center">
+              <div style="height:200px; width:200px;">
+                <script type="text/javascript" id="clstr_globe"
+                  src="//clustrmaps.com/globe.js?d=PtmqIDsoG0APo3esKNzTVAOJtnkg9IGD6POJuZBuXCk"></script>
+              </div>
+            </div>
+
+            <p align="right">
               Template Credit: <a href="https://jonbarron.info/">Jon Barron</a>
-          </p>
+            </p>
 
-      </table>  <!--  Intro + Publications -->
-        
+          </table> <!--  Intro + Publications -->
 
 
-      </td>
-    </tr>
-  </table>      <!--main text-->
-  
+
+        </td>
+      </tr>
+  </table>
+  <!--main text-->
+
 </body>
 
 </html>
