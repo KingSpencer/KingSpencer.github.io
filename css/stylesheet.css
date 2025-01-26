@@ -129,3 +129,100 @@
   span.highlight {
 	background-color: #ffffd0;
   }
+
+  /* addded by zifeng */
+  .carousel {
+    -webkit-transform: translate3d(0, 0, 0);
+    background: rgba(0, 0, 0, 0.85);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    display: none;
+    z-index: 1;
+  }
+
+  .img-center-carousel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: auto;
+    width: 60%;
+    height: auto;
+  }
+
+  .carousel-close {
+    position: absolute;
+    top: 25px;
+    right: 100px;
+    padding: 0;
+    margin: auto;
+    width: 50px;
+    height: auto;
+  }
+
+  .research {
+    margin-bottom: 30px;
+  }
+
+  .research h4 {
+    float: left;
+  }
+
+  .research div {
+    text-align: end;
+    font-size: 0.9em;
+  }
+
+  .thumbnail {
+    width: 100%;
+    float: left;
+
+  }
+
+  .thumbnail-right {
+    margin-left: 35%;
+  }
+
+  #exp li {
+    margin-bottom: 50px;
+  }
+
+  .school-logo {
+    width: 6%;
+    float: left;
+  }
+
+  .school-text {
+    margin-left: 10%;
+    width: 60%;
+  }
+
+
+/* add button and filters */
+
+button {
+    padding: 3px 10px;
+    margin: 2px;
+	font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #2e8ff7cc;
+    color: white;
+  }
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.hidden {
+	display: none;
+}

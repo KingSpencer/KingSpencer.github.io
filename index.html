@@ -27,9 +27,9 @@
 
   <!-- <script src="js/init.js"></script> -->
   <script src="js/carousel.js"></script>
+  <script src="js/paper_filter.js"></script>
 
   <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-  <link rel="stylesheet" type="text/css" href="css/style_index_page.css">
   <link rel="icon" type="image/png" href="images/zifeng_avatar.jpg">
 </head>
 
@@ -217,16 +217,19 @@
             </tbody>
           </table>
 
-          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20" id="publications">
             <tr>
-              <td>
+              <td colspan="2">
                 <heading>Selected Publications</heading> <br>
-                <a href="https://scholar.google.co.il/citations?user=N1uBekcAAAAJ&hl=en">Google Scholar</a>
-                <font color="grey">for all publications</font>.
+                <font color="grey">Filter Papers by Topics</font> (<a href="https://scholar.google.co.il/citations?user=N1uBekcAAAAJ&hl=en">Google Scholar</a>
+                <font color="grey">for all publications</font>.) <br>
+                <button data-tag="all" style="background-color: #007bff; color: white;">Show All</button>
+                <button data-tag="llm">LLM</button>
+                <button data-tag="cl">Continual Learning</button>
+                <button data-tag="misc">Misc</button>
               </td>
             </tr>
-
-            <tr>
+            <tr data-tags="llm">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/modelswarms.png" data-id="ms-carousel"></img>
                 <div id="ms-carousel" class="carousel">
@@ -253,7 +256,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr data-tags="llm">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/skd.png" data-id="skd-carousel"></img>
                 <div id="skd-carousel" class="carousel">
@@ -279,7 +282,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr data-tags="llm">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/revThink.png" data-id="rt-carousel"></img>
                 <div id="rt-carousel" class="carousel">
@@ -305,7 +308,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr data-tags="llm">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/speculativeRAG.png" data-id="sr-carousel"></img>
                 <div id="sr-carousel" class="carousel">
@@ -331,7 +334,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr data-tags="llm">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/tableRAG.png" data-id="tr-carousel"></img>
                 <div id="tr-carousel" class="carousel">
@@ -357,8 +360,7 @@
               </td>
             </tr>
 
-            
-            <tr>
+            <tr data-tags="llm">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/calm.png" data-id="calm-carousel"></img>
                 <div id="calm-carousel" class="carousel">
@@ -384,7 +386,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr data-tags="llm">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/fitm.png" data-id="fitm-carousel"></img>
                 <div id="fitm-carousel" class="carousel">
@@ -410,7 +412,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr data-tags="llm">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/codeclm.png" data-id="codeclm-carousel"></img>
                 <div id="codeclm-carousel" class="carousel">
@@ -436,7 +438,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr data-tags="llm">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/chain-of-table.png" data-id="cot-carousel"></img>
                 <div id="cot-carousel" class="carousel">
@@ -462,8 +464,7 @@
               </td>
             </tr>
 
-
-            <tr>
+            <tr data-tags="llm">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/queryform.png" data-id="qf-carousel"></img>
                 <div id="qf-carousel" class="carousel">
@@ -490,7 +491,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr data-tags="cl">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/dualhsic.png" data-id="dualhsic-carousel"></img>
                 <div id="dualhsic-carousel" class="carousel">
@@ -519,7 +520,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr data-tags="cl">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/sparcl.png" data-id="sparcl-carousel"></img>
                 <div id="sparcl-carousel" class="carousel">
@@ -549,8 +550,7 @@
               </td>
             </tr>
 
-
-            <tr>
+            <tr data-tags="cl">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/dualprompt.png" data-id="dualprompt-carousel"></img>
                 <div id="dualprompt-carousel" class="carousel">
@@ -580,7 +580,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr data-tags="cl">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/l2p.png" data-id="l2p-carousel"></img>
                 <div id="l2p-carousel" class="carousel">
@@ -609,7 +609,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr data-tags="misc">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/hbar.png" data-id="hbar-carousel"></img>
                 <div id="hbar-carousel" class="carousel">
@@ -639,8 +639,7 @@
               </td>
             </tr>
 
-
-            <tr>
+            <tr data-tags="cl">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/lps.png" data-id="lps-carousel"></img>
                 <div id="lps-carousel" class="carousel">
@@ -665,7 +664,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr data-tags="misc">
               <td width="32%">
                 <img class="thumbnail" src="paper_images/knet.png" data-id="knet-carousel"></img>
                 <div id="knet-carousel" class="carousel">
@@ -783,7 +782,6 @@
       </tr>
   </table>
   <!--main text-->
-
 </body>
 
 </html>
