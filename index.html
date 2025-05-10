@@ -192,12 +192,18 @@
             <tr>
               <td colspan="2">
                 <heading>Selected Publications</heading> <br>
-                <font color="grey">Filter Papers by Topics</font> (<a href="https://scholar.google.co.il/citations?user=N1uBekcAAAAJ&hl=en">Google Scholar</a>
-                <font color="grey">for all publications</font>.) <br>
-                <button data-tag="all" style="background-color: #007bff; color: white;">Show All</button>
-                <button data-tag="llm">LLM</button>
-                <button data-tag="cl">Continual Learning</button>
-                <button data-tag="misc">Misc</button>
+                <div class="filter-container">
+                  <div class="filter-label">Filter by Topic:</div>
+                  <div class="filter-buttons">
+                    <button data-tag="all" class="filter-btn active">All Papers</button>
+                    <button data-tag="llm" class="filter-btn">LLM</button>
+                    <button data-tag="cl" class="filter-btn">Continual Learning</button>
+                    <button data-tag="misc" class="filter-btn">Misc</button>
+                  </div>
+                  <div class="scholar-link">
+                    <a href="https://scholar.google.co.il/citations?user=N1uBekcAAAAJ&hl=en">View all on Google Scholar</a>
+                  </div>
+                </div>
               </td>
             </tr>
             <tbody id="publications-container">

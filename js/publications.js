@@ -8,7 +8,7 @@ const publications = [
       abbreviation: "ICML",
       year: 2025
     },
-    paperLink: "https://arxiv.org/abs/2410.11163.pdf",
+    paperLink: "https://arxiv.org/abs/2410.11163",
     codeLink: "https://github.com/google-research/google-research/tree/master/model_swarm",
     image: "paper_images/modelswarms.png",
     tags: ["llm"],
@@ -22,7 +22,7 @@ const publications = [
       abbreviation: "ICLR",
       year: 2025
     },
-    paperLink: "https://arxiv.org/abs/2410.11325.pdf",
+    paperLink: "https://arxiv.org/abs/2410.11325",
     codeLink: "https://github.com/google-research/google-research/tree/master/speculative_kd",
     image: "paper_images/skd.png",
     tags: ["llm"],
@@ -36,7 +36,7 @@ const publications = [
       abbreviation: "NAACL",
       year: 2025
     },
-    paperLink: "https://arxiv.org/abs/2411.19865.pdf",
+    paperLink: "https://arxiv.org/abs/2411.19865",
     image: "paper_images/revThink.png",
     tags: ["llm"],
     description: "To enable LLMs to perform reverse thinking, we introduce Reverse-Enhanced Thinking (RevThink), a framework composed of data augmentation and learning objectives. RevThink outperforms a standard fine-tuning method trained on 10x more forward reasoning, it also exhibits strong generalization to out-of-distribution held-out datasets."
@@ -49,7 +49,7 @@ const publications = [
       abbreviation: "ICLR",
       year: 2025
     },
-    paperLink: "https://arxiv.org/abs/2407.08223.pdf",
+    paperLink: "https://arxiv.org/abs/2407.08223",
     image: "paper_images/speculativeRAG.png",
     tags: ["llm"],
     description: "Speculative RAG is a framework that leverages a larger generalist LM to efficiently verify multiple RAG drafts produced in parallel by a smaller, distilled specialist LM. (A complementary strategy to the CaLM paper below from a very different perspective!)",
@@ -63,7 +63,7 @@ const publications = [
       abbreviation: "NeurIPS",
       year: 2024
     },
-    paperLink: "https://arxiv.org/abs/2410.04739.pdf",
+    paperLink: "https://arxiv.org/abs/2410.04739",
     image: "paper_images/tableRAG.png",
     tags: ["llm"],
     description: "TableRAG is a Retrieval-Augmented Generation (RAG) framework specifically designed for LM-based table understanding. TableRAG leverages query expansion combined with schema and cell retrieval to pinpoint crucial information before providing it to the LMs.",
@@ -77,7 +77,7 @@ const publications = [
       abbreviation: "ACL",
       year: 2024
     },
-    paperLink: "https://arxiv.org/abs/2406.05365.pdf",
+    paperLink: "https://arxiv.org/abs/2406.05365",
     image: "paper_images/calm.png",
     tags: ["llm"],
     description: "CaLM is a novel verification framework that leverages the insight that a robust grounded response should be consistent with information derived solely from its cited sources. Our framework empowers smaller LMs, which rely less on parametric memory and excel at processing relevant information given a query, to validate the output of larger LMs."
@@ -90,7 +90,7 @@ const publications = [
       abbreviation: "ACL",
       year: 2024
     },
-    paperLink: "https://arxiv.org/abs/2406.16008.pdf",
+    paperLink: "https://arxiv.org/abs/2406.16008",
     image: "paper_images/fitm.png",
     tags: ["llm"],
     description: "LLMs often struggle to capture relevant information in the middle of their input due to an intrinsic U-shaped attention bias, favoring tokens at the beginning and end. To address this, we propose a calibration mechanism called 'found-in-the-middle' to mitigate this bias, greatly improving context relevance and RAG performance."
@@ -103,7 +103,7 @@ const publications = [
       abbreviation: "NAACL",
       year: 2024
     },
-    paperLink: "https://arxiv.org/abs/2404.05875.pdf",
+    paperLink: "https://arxiv.org/abs/2404.05875",
     image: "paper_images/codeclm.png",
     tags: ["llm"],
     description: "CodecLM is a general framework for adaptively generating high-quality synthetic data for LLM alignment with different downstream instruction distributions and LLMs. Drawing on the Encode-Decode principles, we use LLMs as codecs to guide the data generation process.",
@@ -117,7 +117,7 @@ const publications = [
       abbreviation: "ICLR",
       year: 2024
     },
-    paperLink: "https://arxiv.org/pdf/2401.04398.pdf",
+    paperLink: "https://arxiv.org/abs/2401.04398",
     image: "paper_images/chain-of-table.png",
     tags: ["llm"],
     description: "CHAIN-OF-TABLE enhances the reasoning capability of LLMs by leveraging tabular structures to express intermediate thoughts for table-based reasoning. It instructs LLMs to dynamically plan an operation chain according to the input table and its associated question."
@@ -130,7 +130,7 @@ const publications = [
       abbreviation: "ACL",
       year: 2023
     },
-    paperLink: "https://arxiv.org/pdf/2211.07730.pdf",
+    paperLink: "https://arxiv.org/abs/2211.07730",
     image: "paper_images/queryform.png",
     tags: ["llm"],
     description: "QueryForm consists of a novel prompting-based framework for zero-shot document entity recognition with large language models (LLMs), and a large-scale weakly-supervised pre-training method on publicly available webpages."
@@ -143,7 +143,7 @@ const publications = [
       abbreviation: "ICML",
       year: 2023
     },
-    paperLink: "https://arxiv.org/pdf/2305.00380.pdf",
+    paperLink: "https://arxiv.org/abs/2305.00380",
     image: "paper_images/dualhsic.png",
     tags: ["cl"],
     description: "DualHSIC consists of two complementary components that stem from the Hilbert Schmidt independence criterion (HSIC): HSIC-Bottleneck for Rehearsal (HBR) lessens the inter-task interference and HSIC Alignment (HA) promotes task-invariant knowledge sharing.",
@@ -157,7 +157,7 @@ const publications = [
       abbreviation: "NeurIPS",
       year: 2022
     },
-    paperLink: "https://arxiv.org/pdf/2209.09476.pdf",
+    paperLink: "https://arxiv.org/abs/2209.09476",
     image: "paper_images/sparcl.png",
     tags: ["cl"],
     description: "SparCL explores sparsity for efficient continual learning and achieves both training acceleration and accuracy preservation through the synergy of three aspects: weight sparsity, data efficiency, and gradient sparsity.",
@@ -171,7 +171,7 @@ const publications = [
       abbreviation: "ECCV",
       year: 2022
     },
-    paperLink: "https://arxiv.org/pdf/2204.04799.pdf",
+    paperLink: "https://arxiv.org/abs/2204.04799",
     image: "paper_images/dualprompt.png",
     tags: ["cl"],
     description: "DualPrompt presents a novel approach to attach complementary prompts to the pre-trained backbone, and then formulates the continual learning objective as learning task-invariant and task-specific 'instructions'.",
@@ -185,7 +185,7 @@ const publications = [
       abbreviation: "CVPR",
       year: 2022
     },
-    paperLink: "https://arxiv.org/pdf/2112.08654.pdf",
+    paperLink: "https://arxiv.org/abs/2112.08654",
     image: "paper_images/l2p.png",
     tags: ["cl"],
     description: "We propose a new learning paradigm for continual learning: our method learns to dynamically prompt (L2P) a pre-trained model to learn tasks sequentially under different task transitions.",
@@ -200,7 +200,7 @@ const publications = [
       abbreviation: "NeurIPS",
       year: 2021
     },
-    paperLink: "https://arxiv.org/pdf/2106.02734.pdf",
+    paperLink: "https://arxiv.org/abs/2106.02734",
     image: "paper_images/hbar.png",
     tags: ["misc"],
     description: "We investigate the HSIC (Hilbert-Schmidt independence criterion) bottleneck as a regularizer for learning an adversarially robust deep neural network classifier, both theoretically and empirically.",
@@ -214,23 +214,24 @@ const publications = [
       abbreviation: "ICDM",
       year: 2020
     },
-    paperLink: "https://arxiv.org/pdf/2012.06956.pdf",
+    paperLink: "https://arxiv.org/abs/2012.06956",
     image: "paper_images/lps.png",
     tags: ["cl"],
     description: "We propose a learn-prune-share (LPS) algorithm which addresses the challenges of catastrophic forgetting, parsimony, and knowledge reuse simultaneously."
   },
   {
-    title: "Open-world class discovery with kernel networks",
+    title: "Open-World Class Discovery with Kernel Networks",
     authors: "Zifeng Wang, Batool Salehi, Andrey Gritsenko, Kaushik Chowdhury, Stratis Ioannidis, Jennifer Dy",
     venue: {
       fullName: "International Conference on Data Mining",
       abbreviation: "ICDM",
       year: 2020
     },
-    paperLink: "https://arxiv.org/pdf/2012.06957.pdf",
+    paperLink: "https://arxiv.org/abs/2012.06957",
     image: "paper_images/knet.png",
     tags: ["misc"],
-    description: "We propose Class Discovery Kernel Network with Expansion (CD-KNet-Exp), a deep learning framework for open-world class discovery problem."
+    description: "We propose Class Discovery Kernel Network with Expansion (CD-KNet-Exp), a deep learning framework for open-world class discovery problem.",
+    award: "Best Paper Candidate"
   }
 ];
 
@@ -242,9 +243,17 @@ function createPublicationHTML(pub) {
   const authorsWithBold = pub.authors.replace(/Zifeng Wang/g, '<strong>Zifeng Wang</strong>');
   
   // Format venue with bold abbreviation if it exists
-  const venueFormatted = pub.venue.abbreviation 
-    ? `${pub.venue.fullName} (<strong>${pub.venue.abbreviation}</strong>), ${pub.venue.year}`
-    : `${pub.venue.fullName}, ${pub.venue.year}`;
+  let venueHTML = '';
+  if (pub.venue.abbreviation) {
+    venueHTML = `${pub.venue.fullName} (<strong>${pub.venue.abbreviation}</strong>), ${pub.venue.year}`;
+  } else {
+    venueHTML = `${pub.venue.fullName}, ${pub.venue.year}`;
+  }
+  
+  // Add award in red if it exists
+  if (pub.award) {
+    venueHTML += `<br><span style="color: red;">${pub.award}</span>`;
+  }
   
   return `
     <tr data-tags="${pub.tags.join(' ')}">
@@ -263,7 +272,7 @@ function createPublicationHTML(pub) {
         <br>
         ${authorsWithBold}
         <br>
-        <em>${venueFormatted}</em>
+        <em>${venueHTML}</em>
         <br>
         [<a href="${pub.paperLink}">paper</a>]
         ${pub.codeLink ? `[<a href="${pub.codeLink}">code</a>]` : ''}
@@ -322,9 +331,8 @@ document.addEventListener('DOMContentLoaded', () => {
       filterPublications(tag);
       
       // Update active button state
-      document.querySelectorAll('button[data-tag]').forEach(btn => {
-        btn.style.backgroundColor = btn === button ? '#007bff' : '';
-        btn.style.color = btn === button ? 'white' : '';
+      document.querySelectorAll('.filter-btn').forEach(btn => {
+        btn.classList.toggle('active', btn === button);
       });
     });
   });
