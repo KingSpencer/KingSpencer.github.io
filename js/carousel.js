@@ -1,62 +1,24 @@
-$( function(){
-	$( ".carousel-close" ).on('click', function(){
-		var carousel_id = $(this).data("carousel-id");
-		
-		$("#" + carousel_id).fadeOut();
-	});
+document.addEventListener('DOMContentLoaded', function() {
+	// Only handle static carousels (those that exist in the initial HTML)
+	const staticCarousels = document.querySelectorAll('.carousel:not([data-dynamic])');
 	
-	$( ".left-arrow" ).on('click', function(){
-		
-		var carousel_id = $(this).data("carousel-id");
-		
-		var img = $( "#" + carousel_id + " .img-center-carousel" );
-
-		for (var i = 0; i < img.length; i++){
-			if ($( img.eq(i) ).css("display") != "none"){
-				$( img.eq(i) ).fadeOut();
-				var j = i;
-				if (j == 0){
-					j = img.length - 1;
-				}
-				else {
-					j = j - 1;
-				}
-				$( img.eq(j) ).fadeIn();
-				break;
-			}
+	staticCarousels.forEach(carousel => {
+		const closeBtn = carousel.querySelector('.carousel-close');
+		if (closeBtn) {
+			closeBtn.addEventListener('click', () => {
+				carousel.style.display = 'none';
+			});
 		}
 	});
-	
-	$( ".right-arrow" ).on('click', function(){
-		
-		var carousel_id = $(this).data("carousel-id");
-		
-		var img = $( "#" + carousel_id + " .img-center-carousel" );
 
-		for (var i = 0; i < img.length; i++){
-			if ($( img.eq(i) ).css("display") != "none"){
-				$( img.eq(i) ).fadeOut();
-				var j = i;
-				if (j == img.length - 1){
-					j = 0;
-				}
-				else {
-					j = j + 1;
-				}
-				$( img.eq(j) ).fadeIn();
-				break;
+	const staticThumbnails = document.querySelectorAll('.thumbnail:not([data-dynamic])');
+	staticThumbnails.forEach(thumb => {
+		thumb.addEventListener('click', () => {
+			const carouselId = thumb.getAttribute('data-id');
+			const carousel = document.getElementById(carouselId);
+			if (carousel) {
+				carousel.style.display = 'block';
 			}
-		}
+		});
 	});
-	
-	$( ".thumbnail" ).on('click', function(){
-		
-		//var Page = $(this).attr("class").split("-")[0];
-		
-		var carousel_id = $(this).data("id");
-		
-		$( "#" + carousel_id ).fadeIn();
-	
-	})
-	
-} );
+});
