@@ -259,11 +259,6 @@ function createPublicationHTML(pub) {
     <tr data-tags="${pub.tags.join(' ')}">
       <td width="32%">
         <img class="thumbnail" src="${pub.image}" data-id="${carouselId}"></img>
-        <div id="${carouselId}" class="carousel" style="display:none;">
-          <div class="carousel-content">
-            <img class="img-center-carousel" src="${pub.image}" alt="">
-          </div>
-        </div>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
         <a href="${pub.paperLink}">
@@ -293,18 +288,51 @@ function renderPublications() {
   // Sort publications by date (most recent first)
   const sortedPubs = [...publications].sort((a, b) => b.venue.year - a.venue.year);
 
+  // Create carousel container if it doesn't exist
+  if (!document.getElementById('carousel-container')) {
+    const carouselContainer = document.createElement('div');
+    carouselContainer.id = 'carousel-container';
+    document.body.appendChild(carouselContainer);
+  }
+
   // Render each publication
   container.innerHTML = sortedPubs.map(createPublicationHTML).join('');
 
-  // Reinitialize carousel functionality
-  $(".carousel").on('click', function() {
-    $(this).fadeOut();
+  // Create carousels
+  const carouselContainer = document.getElementById('carousel-container');
+  carouselContainer.innerHTML = sortedPubs.map(pub => {
+    const carouselId = pub.image.split('/').pop().split('.')[0] + '-carousel';
+    return `
+      <div id="${carouselId}" class="carousel">
+        <div class="carousel-content">
+          <img class="img-center-carousel" src="${pub.image}" alt="">
+          <div class="carousel-prompt">Click background to close</div>
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  // Initialize carousel functionality
+  $(".carousel").on('click', function(e) {
+    // Only close if clicking the background or the prompt
+    if (e.target === this || e.target.classList.contains('carousel-prompt')) {
+      $(this).hide();
+      // Remove carousel-active class from the parent row
+      $(this).closest('tr').removeClass('carousel-active');
+    }
   });
 
   $(".thumbnail").on('click', function(e) {
     e.stopPropagation();  // Prevent click from bubbling up
-    var carousel_id = $(this).data("id");
-    $("#" + carousel_id).fadeIn();
+    const carousel_id = $(this).data("id");
+    const $carousel = $("#" + carousel_id);
+    const $row = $(this).closest('tr');
+    
+    // Add carousel-active class to the row
+    $row.addClass('carousel-active');
+    
+    // Show carousel
+    $carousel.show();
   });
 }
 
