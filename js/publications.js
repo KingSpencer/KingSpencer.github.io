@@ -305,8 +305,9 @@ function renderPublications() {
     return `
       <div id="${carouselId}" class="carousel">
         <div class="carousel-content">
+          <div class="carousel-title"><a href="${pub.paperLink}" target="_blank">${pub.title}</a></div>
           <img class="img-center-carousel" src="${pub.image}" alt="">
-          <div class="carousel-prompt">Click background to close</div>
+          <div class="carousel-prompt">Click here to close</div>
         </div>
       </div>
     `;

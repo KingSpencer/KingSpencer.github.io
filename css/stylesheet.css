@@ -142,23 +142,48 @@
     z-index: 9999;
   }
 
+  .carousel-title {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    margin-bottom: 20px;
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+    font-weight: 500;
+    max-width: 90%;
+    line-height: 1.4;
+  }
+
+  .carousel-title a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .carousel-title a:hover {
+    color: #f09228;
+    text-decoration: none;
+  }
+
   .carousel-content {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: auto;
+    width: 80%;
     height: auto;
-    max-width: 90%;
-    max-height: 90%;
+    max-width: 80%;
+    max-height: 80%;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .img-center-carousel {
-    max-width: 100%;
-    max-height: 90vh;
+    width: 100%;
+    max-height: 70vh;
     object-fit: contain;
     margin-bottom: 15px;
+    display: block;
   }
 
   .carousel-close {
@@ -177,6 +202,17 @@
     margin-top: 10px;
     font-family: 'Lato', Verdana, Helvetica, sans-serif;
     font-style: italic;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    padding: 5px 10px;
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+  .carousel-prompt:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: scale(1.05);
   }
 
   .research {
