@@ -1,6 +1,18 @@
 // Publications data
 const publications = [
   {
+    title: "Heterogeneous Swarms: Jointly Optimizing Model Roles and Weights for Multi-LLM Systems",
+    authors: "Shangbin Feng, Zifeng Wang, Palash Goyal, Yike Wang, Weijia Shi, Huang Xia, Hamid Palangi, Luke Zettlemoyer, Yulia Tsvetkov, Chen-Yu Lee, Tomas Pfister",
+    venue: {
+      fullName: "arXiv",
+      year: 2025
+    },
+    paperLink: "https://arxiv.org/abs/2502.04510",
+    image: "paper_images/heterogeneous_swarms.png",
+    tags: ["llm"],
+    description: "We propose Heterogeneous Swarms, an algorithm to design multi-LLM systems by jointly optimizing model roles (i.e., multi-LLM workflow / topology) and model weights. Heterogeneous Swarms discovers multi-LLM systems with heterogeneous model roles and substantial collaborative gains, and benefits from the diversity of language models."
+  },
+  {
     title: "Model Swarms: Collaborative Search to Adapt LLM Experts via Swarm Intelligence",
     authors: "Shangbin Feng, Zifeng Wang, Yike Wang, Sayna Ebrahimi, Hamid Palangi, Lesly Miculicich, Achin Kulshrestha, Nathalie Rauschmayr, Yejin Choi, Yulia Tsvetkov, Chen-Yu Lee, Tomas Pfister",
     venue: {
@@ -13,6 +25,32 @@ const publications = [
     image: "paper_images/modelswarms.png",
     tags: ["llm"],
     description: "We propose Model Swarms, a collaborative search algorithm to adapt LLMs via swarm intelligence, the collective behavior guiding individual systems. Specifically, Model Swarms starts with a pool of LLM experts and a utility function. Guided by the best-found checkpoints across models, diverse LLM experts collaboratively move in the weight space and optimize a utility function representing model adaptation objectives."
+  },
+  {
+    title: "Magnet: Multi-turn Tool-use Data Synthesis and Distillation via Graph Translation",
+    authors: "Fan Yin, Zifeng Wang, I-Hung Hsu, Jun Yan, Ke Jiang, Yanfei Chen, Jindong Gu, Long T. Le, Kai-Wei Chang, Chen-Yu Lee, Hamid Palangi, Tomas Pfister",
+    venue: {
+      fullName: "Association for Computational Linguistics",
+      abbreviation: "ACL",
+      year: 2025
+    },
+    paperLink: "https://arxiv.org/abs/2503.07826",
+    image: "paper_images/magnet.png",
+    tags: ["llm"],
+    description: "We propose Magnet, a principled framework for synthesizing high-quality training trajectories to enhance the function calling capability of large language model agents in multi-turn conversations with humans. The framework is based on automatic and iterative translations from a function signature path to a sequence of queries and executable function calls."
+  },
+  {
+    title: "In Prospect and Retrospect: Reflective Memory Management for Long-term Personalized Dialogue Agents",
+    authors: "Zhen Tan, Jun Yan, I-Hung Hsu, Rujun Han, Zifeng Wang, Long T. Le, Yiwen Song, Yanfei Chen, Hamid Palangi, George Lee, Anand Iyer, Tianlong Chen, Huan Liu, Chen-Yu Lee, Tomas Pfister",
+    venue: {
+      fullName: "Association for Computational Linguistics",
+      abbreviation: "ACL",
+      year: 2025
+    },
+    paperLink: "https://arxiv.org/abs/2503.08026",
+    image: "paper_images/rmm_memory.png",
+    tags: ["llm"],
+    description: "We propose Reflective Memory Management (RMM), a novel mechanism for long-term dialogue agents, integrating forward- and backward-looking reflections: (1) Prospective Reflection, which dynamically summarizes interactions across granularities-utterances, turns, and sessions-into a personalized memory bank for effective future retrieval, and (2) Retrospective Reflection, which iteratively refines the retrieval in an online reinforcement learning (RL) manner based on LLMs' cited evidence."
   },
   {
     title: "Speculative Knowledge Distillation: Bridging the Teacher-Student Gap Through Interleaved Sampling",
