@@ -1,6 +1,18 @@
 // Publications data
 const publications = [
   {
+    title: "Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities",
+    authors: "Gemini Team, Google",
+    venue: {
+      fullName: "arXiv",
+      year: 2025
+    },
+    paperLink: "https://arxiv.org/abs/2507.06261",
+    image: "paper_images/gemini_2_5_pareto.png",
+    tags: ["llm"],
+    description: "The Gemini 2.5 model generation spans the full Pareto frontier of model capability vs cost, allowing users to explore the boundaries of what is possible with complex agentic problem solving."
+  },
+  {
     title: "Heterogeneous Swarms: Jointly Optimizing Model Roles and Weights for Multi-LLM Systems",
     authors: "Shangbin Feng, Zifeng Wang, Palash Goyal, Yike Wang, Weijia Shi, Huang Xia, Hamid Palangi, Luke Zettlemoyer, Yulia Tsvetkov, Chen-Yu Lee, Tomas Pfister",
     venue: {
