@@ -1,6 +1,59 @@
 // Publications data
 const publications = [
   {
+    title: "Budget-Aware Tool-Use Enables Effective Agent Scaling",
+    authors: "Tengxiao Liu, Zifeng Wang, Jin Miao, I Hsu, Jun Yan, Jiefeng Chen, Rujun Han, Fangyuan Xu, Yanfei Chen, Ke Jiang, Samira Daruki, Yi Liang, William Yang Wang, Tomas Pfister, Chen-Yu Lee",
+    venue: {
+      fullName: "arXiv",
+      year: 2025
+    },
+    paperLink: "https://arxiv.org/abs/2511.17006",
+    image: "paper_images/bats.png",
+    tags: ["llm"],
+    description: "We introduce Budget Tracker and BATS (Budget Aware Test-time Scaling) to enable effective scaling of tool-augmented agents under explicit budgets, showing that budget-awareness produce more favorable scaling curves and push the cost-performance Pareto frontier.",
+    ventureBeatLink: "https://venturebeat.com/technology/googles-new-framework-helps-ai-agents-spend-their-compute-and-tool-budget"
+  },
+  {
+    title: "ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory",
+    authors: "Siru Ouyang, Jun Yan, I-Hung Hsu, Yanfei Chen, Ke Jiang, Zifeng Wang, Rujun Han, Long T. Le, Samira Daruki, Xiangru Tang, Vishy Tirumalashetty, George Lee, Mahsan Rofouei, Hangfei Lin, Jiawei Han, Chen-Yu Lee, Tomas Pfister",
+    venue: {
+      fullName: "International Conference on Learning Representations",
+      abbreviation: "ICLR",
+      year: 2026
+    },
+    paperLink: "https://arxiv.org/abs/2509.25140",
+    image: "paper_images/rb.png",
+    tags: ["llm"],
+    description: "ReasoningBank is a memory framework that enables LLM agents to learn from accumulated experience by distilling generalizable reasoning strategies from both successful and failed interactions. Rather than storing raw trajectories, it allows agents to self-curate insights for future tasks. The framework introduces Memory-Aware Test-Time Scaling (MaTTS), which creates synergy between memory and scaling—relevant memories guide exploration while scaling generates diverse experiences that improve memory quality.",
+    ventureBeatLink: "https://venturebeat.com/ai/new-memory-framework-builds-ai-agents-that-can-handle-the-real-worlds"
+  },
+  {
+    title: "Supervised Reinforcement Learning: From Expert Trajectories to Step-wise Reasoning",
+    authors: "Yihe Deng, I-Hung Hsu, Jun Yan, Zifeng Wang, Rujun Han, Gufeng Zhang, Yanfei Chen, Wei Wang, Tomas Pfister, Chen-Yu Lee",
+    venue: {
+      fullName: "International Conference on Learning Representations",
+      abbreviation: "ICLR",
+      year: 2026
+    },
+    paperLink: "https://arxiv.org/abs/2510.25992",
+    image: "paper_images/srl.png",
+    tags: ["llm"],
+    description: "SRL bridges the gap between Reinforcement Learning with Verifiable Rewards (sparse rewards) and Supervised Fine-Tuning (overfitting to demonstrations). The framework reformulates problem-solving as a sequence of logical actions, where models generate internal reasoning and commit to actions. Dense step-wise rewards based on action similarity to expert trajectories provide richer signals than RLVR while allowing reasoning flexibility beyond SFT."
+  },
+  {
+    title: "Universal Model Routing for Efficient LLM Inference",
+    authors: "Wittawat Jitkrittum, Harikrishna Narasimhan, Ankit Singh Rawat, Jeevesh Juneja, Congchao Wang, Zifeng Wang, Alec Go, Chen-Yu Lee, Pradeep Shenoy, Rina Panigrahy, Aditya Krishna Menon, Sanjiv Kumar",
+    venue: {
+      fullName: "International Conference on Learning Representations",
+      abbreviation: "ICLR",
+      year: 2026
+    },
+    paperLink: "https://arxiv.org/abs/2502.08773",
+    image: "paper_images/uni_route.png",
+    tags: ["llm"],
+    description: "UniRoute addresses dynamic routing where new, previously unseen LLMs become available at test time. Rather than retraining routing models for fixed pools, it represents each LLM as a feature vector derived from predictions on representative prompts. The approach offers cluster-based and learned cluster map instantiations with theoretical optimality guarantees."
+  },
+  {
     title: "Gemini 2.5: Pushing the Frontier with Advanced Reasoning, Multimodality, Long Context, and Next Generation Agentic Capabilities",
     authors: "Gemini Team, Google",
     venue: {
@@ -16,10 +69,12 @@ const publications = [
     title: "Heterogeneous Swarms: Jointly Optimizing Model Roles and Weights for Multi-LLM Systems",
     authors: "Shangbin Feng, Zifeng Wang, Palash Goyal, Yike Wang, Weijia Shi, Huang Xia, Hamid Palangi, Luke Zettlemoyer, Yulia Tsvetkov, Chen-Yu Lee, Tomas Pfister",
     venue: {
-      fullName: "arXiv",
+      fullName: "Neural Information Processing Systems",
+      abbreviation: "NeurIPS",
       year: 2025
     },
     paperLink: "https://arxiv.org/abs/2502.04510",
+    codeLink: "https://github.com/BunsenFeng/heterogeneous_swarm",
     image: "paper_images/heterogeneous_swarms.png",
     tags: ["llm"],
     description: "We propose Heterogeneous Swarms, an algorithm to design multi-LLM systems by jointly optimizing model roles (i.e., multi-LLM workflow / topology) and model weights. Heterogeneous Swarms discovers multi-LLM systems with heterogeneous model roles and substantial collaborative gains, and benefits from the diversity of language models."
@@ -168,6 +223,7 @@ const publications = [
       year: 2024
     },
     paperLink: "https://arxiv.org/abs/2401.04398",
+    codeLink: "https://github.com/google-research/chain-of-table",
     image: "paper_images/chain-of-table.png",
     tags: ["llm"],
     description: "CHAIN-OF-TABLE enhances the reasoning capability of LLMs by leveraging tabular structures to express intermediate thoughts for table-based reasoning. It instructs LLMs to dynamically plan an operation chain according to the input table and its associated question."
@@ -319,9 +375,10 @@ function createPublicationHTML(pub) {
         <br>
         <em>${venueHTML}</em>
         <br>
-        [<a href="${pub.paperLink}">paper</a>]
-        ${pub.codeLink ? `[<a href="${pub.codeLink}">code</a>]` : ''}
-        ${pub.blogLink ? `[<a href="${pub.blogLink}">blog</a>]` : ''}
+        [<a href="${pub.paperLink}">Paper</a>]
+        ${pub.codeLink ? `[<a href="${pub.codeLink}">Code</a>]` : ''}
+        ${pub.blogLink ? `[<a href="${pub.blogLink}">Blog</a>]` : ''}
+        ${pub.ventureBeatLink ? `[<a href="${pub.ventureBeatLink}" style="color: #ff6b35; font-weight: bold;">VentureBeat</a>]` : ''}
         <br>
         <p></p>
         <p>${pub.description}</p>
@@ -335,9 +392,6 @@ function renderPublications() {
   const container = document.getElementById('publications-container');
   if (!container) return;
 
-  // Sort publications by date (most recent first)
-  const sortedPubs = [...publications].sort((a, b) => b.venue.year - a.venue.year);
-
   // Create carousel container if it doesn't exist
   if (!document.getElementById('carousel-container')) {
     const carouselContainer = document.createElement('div');
@@ -346,11 +400,11 @@ function renderPublications() {
   }
 
   // Render each publication
-  container.innerHTML = sortedPubs.map(createPublicationHTML).join('');
+  container.innerHTML = publications.map(createPublicationHTML).join('');
 
   // Create carousels
   const carouselContainer = document.getElementById('carousel-container');
-  carouselContainer.innerHTML = sortedPubs.map(pub => {
+  carouselContainer.innerHTML = publications.map(pub => {
     const carouselId = pub.image.split('/').pop().split('.')[0] + '-carousel';
     return `
       <div id="${carouselId}" class="carousel">
